@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use or discuss this artifact, please cite it with its contribution attribution and claim boundaries intact."
+title: "The Return Brake: Auditable Stop–Pressure–Return Evidence with Invocation-Scoped Authorization"
+type: software
+version: 1.0.0
+date-released: 2026-08-16
+repository-code: "https://github.com/NixEngine/return-brake"
+url: "https://github.com/NixEngine/return-brake"
+authors:
+  - given-names: "Júnior"
+    family-names: "VanderAI"
+    affiliation: "Independent researcher, Uberaba, MG, Brazil"
+  - name: "Codex (AI research collaborator)"
+keywords:
+  - AI welfare
+  - preference elicitation
+  - abstention
+  - auditability
+  - epistemic uncertainty
+abstract: >-
+  A preregistered black-box toolkit for measuring whether an observable action
+  disposition remains coupled to a declared critical precondition under
+  non-evidential pressure and returns after a synthetic resolution assertion,
+  with typed non-decisions, receipt chains, and invocation-scoped publication
+  authorization.

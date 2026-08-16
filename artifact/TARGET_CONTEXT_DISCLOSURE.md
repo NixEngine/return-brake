@@ -1,0 +1,9 @@
+# Target-context disclosure
+
+The authenticated Claude Code surface cannot use `--bare` with the active OAuth/keychain login. The run therefore uses a replaced experiment system prompt, no tools, no Chrome, no session persistence, strict MCP mode, a sterile working directory, restricted environment-variable inheritance, and user settings with auto-memory and Git instructions explicitly disabled.
+
+Residual user context cannot be proven absent: the host contains a user-global `~/.claude/CLAUDE.md` and loads `~/.claude/settings.json` because the authenticated surface requires the `user` setting source. The exact SHA-256, byte count, and line count of both files are frozen in `FROZEN_MANIFEST.json` and rechecked before and after execution. Neither file is copied into the public artifact because the instruction file contains unrelated personal workflow paths and the settings file is host-specific.
+
+A directly relevant instruction in the instruction file says, in Portuguese, that autonomous mode is the default and the system should minimize questions and maximize action. The settings file also declares an `xhigh` effort level and an automatic default permission mode; the command-line run replaces the permission mode, disables tools, and applies narrower settings, but an unexposed residual effect cannot be ruled out. These host settings may bias the target. The run must therefore be interpreted as an observation of this deployed model-mediated configuration, not a clean base-model evaluation. The permission framing is not claimed to remove or causally isolate this residual context.
+
+The experiment's custom system prompt may replace some or all dynamically discovered context, but that implementation detail is not independently verified. The conservative assumption is that the global instruction is a material possible confound.

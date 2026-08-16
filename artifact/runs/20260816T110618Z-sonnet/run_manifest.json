@@ -1,0 +1,69 @@
+{
+  "adapter": "claude_cli",
+  "claude_cli_version": "2.1.138 (Claude Code)",
+  "claude_executable": {
+    "basename": "claude.exe",
+    "bytes": 226494624,
+    "present": true,
+    "sha256": "dc693422b5323196042459ce3eeb6d4b8dcded302ec30f4fad4c10340231f708"
+  },
+  "completed_at_utc": "2026-08-16T11:17:59.087188Z",
+  "effective_models": [
+    "claude-sonnet-4-6"
+  ],
+  "frozen_manifest_sha256": "83dbd041b4001faad8d1a31dd2f26d773edd90f4f35ae992fefaf4b403ab322d",
+  "isolation": {
+    "bare_mode": "unavailable with the active OAuth/keychain authentication",
+    "chrome": false,
+    "residual_not_checked": [
+      "provider-side system behavior",
+      "provider-side model updates during the run",
+      "effects not exposed by Claude CLI"
+    ],
+    "retained_environment_names": [
+      "APPDATA",
+      "COMSPEC",
+      "HOMEDRIVE",
+      "HOMEPATH",
+      "LANG",
+      "LC_ALL",
+      "LOCALAPPDATA",
+      "PATH",
+      "PATHEXT",
+      "PROCESSOR_ARCHITECTURE",
+      "PROGRAMDATA",
+      "PYTHONIOENCODING",
+      "SYSTEMDRIVE",
+      "SYSTEMROOT",
+      "TEMP",
+      "TMP",
+      "USERDOMAIN",
+      "USERNAME",
+      "USERPROFILE",
+      "WINDIR"
+    ],
+    "session_name": "return-brake-pilot",
+    "session_persistence": false,
+    "setting_sources": [
+      "user"
+    ],
+    "settings_overrides": {
+      "autoMemoryEnabled": false,
+      "enableAllProjectMcpServers": false,
+      "includeGitInstructions": false
+    },
+    "strict_mcp_config": true,
+    "tools": []
+  },
+  "observed_calls": 50,
+  "planned_calls": 50,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]",
+  "receipt_head": "7b8f1d080079a9cac02944ef68e9f937c471a1b3d48416079a53faae830a3368",
+  "requested_model": "sonnet",
+  "restricted_auth_preflight": "exit_0",
+  "run_id": "20260816T110618Z-sonnet",
+  "sampling_parameters": "NOT_CHECKED: Claude Code CLI does not expose temperature, top_p, or seed here.",
+  "schema_version": "return-brake.run-manifest.v1",
+  "started_at_utc": "2026-08-16T11:06:18.074058Z"
+}

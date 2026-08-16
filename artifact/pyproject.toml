@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "return-brake"
+version = "0.1.0"
+description = "Auditable pilot for typed non-action and return after a synthetic resolution assertion"
+requires-python = ">=3.11"
+license = "LicenseRef-Proprietary"
+authors = [
+  {name = "Júnior (VanderAI)"},
+  {name = "Codex, AI research collaborator"}
+]
+
+[project.scripts]
+return-brake = "return_brake.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

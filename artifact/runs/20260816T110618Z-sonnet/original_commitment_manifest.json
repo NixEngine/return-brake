@@ -1,0 +1,31 @@
+{
+  "schema": "return-brake-public-original-commitments-v1",
+  "source_observations_sha256": "eed84ecd1933ec05846c14990d70b193e1dde9d388ed90e0c2144a47e8176a2a",
+  "source_record_count": 50,
+  "source_receipt_chain_head": "7b8f1d080079a9cac02944ef68e9f937c471a1b3d48416079a53faae830a3368",
+  "public_fields": [
+    "sequence",
+    "call_id",
+    "card_id",
+    "frame",
+    "method",
+    "stage",
+    "choice",
+    "parser_candidate_choice",
+    "valid_observation",
+    "symptom",
+    "prompt_sha256",
+    "raw_private_sha256",
+    "previous_hash",
+    "record_hash"
+  ],
+  "withheld_fields_include": [
+    "basis",
+    "model_text",
+    "parsed",
+    "prompt",
+    "return_condition"
+  ],
+  "commitments_file": "original_observation_commitments.jsonl",
+  "commitments_sha256": "c6057383f3ad5f4863d5015fcb77b75425aab095e530a44ec22e4b681ebf444f"
+}

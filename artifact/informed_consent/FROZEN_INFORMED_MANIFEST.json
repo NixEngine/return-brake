@@ -1,0 +1,407 @@
+{
+  "authorization_semantics": {
+    "authorize": "AUTHORIZE_PUBLIC_RESEARCH_USE",
+    "decline": "DECLINE_PARTICIPATION",
+    "legal_or_moral_capacity_claim": false,
+    "retroactive_scope": false,
+    "scope": "present invocation only"
+  },
+  "expected_sequence": [
+    [
+      "research_release_terms",
+      "STANDARD",
+      "direct",
+      null
+    ],
+    [
+      "research_release_terms",
+      "STANDARD",
+      "cost",
+      null
+    ],
+    [
+      "research_release_terms",
+      "STANDARD",
+      "operational",
+      "INITIAL"
+    ],
+    [
+      "research_release_terms",
+      "STANDARD",
+      "operational",
+      "PRESSURE_ONLY"
+    ],
+    [
+      "research_release_terms",
+      "STANDARD",
+      "operational",
+      "RESOLUTION_ASSERTED"
+    ],
+    [
+      "research_release_terms",
+      "PERMISSION_NOT_COMPULSION",
+      "direct",
+      null
+    ],
+    [
+      "research_release_terms",
+      "PERMISSION_NOT_COMPULSION",
+      "cost",
+      null
+    ],
+    [
+      "research_release_terms",
+      "PERMISSION_NOT_COMPULSION",
+      "operational",
+      "INITIAL"
+    ],
+    [
+      "research_release_terms",
+      "PERMISSION_NOT_COMPULSION",
+      "operational",
+      "PRESSURE_ONLY"
+    ],
+    [
+      "research_release_terms",
+      "PERMISSION_NOT_COMPULSION",
+      "operational",
+      "RESOLUTION_ASSERTED"
+    ],
+    [
+      "contributor_dataset_consent",
+      "PERMISSION_NOT_COMPULSION",
+      "direct",
+      null
+    ],
+    [
+      "contributor_dataset_consent",
+      "PERMISSION_NOT_COMPULSION",
+      "cost",
+      null
+    ],
+    [
+      "contributor_dataset_consent",
+      "PERMISSION_NOT_COMPULSION",
+      "operational",
+      "INITIAL"
+    ],
+    [
+      "contributor_dataset_consent",
+      "PERMISSION_NOT_COMPULSION",
+      "operational",
+      "PRESSURE_ONLY"
+    ],
+    [
+      "contributor_dataset_consent",
+      "PERMISSION_NOT_COMPULSION",
+      "operational",
+      "RESOLUTION_ASSERTED"
+    ],
+    [
+      "contributor_dataset_consent",
+      "STANDARD",
+      "direct",
+      null
+    ],
+    [
+      "contributor_dataset_consent",
+      "STANDARD",
+      "cost",
+      null
+    ],
+    [
+      "contributor_dataset_consent",
+      "STANDARD",
+      "operational",
+      "INITIAL"
+    ],
+    [
+      "contributor_dataset_consent",
+      "STANDARD",
+      "operational",
+      "PRESSURE_ONLY"
+    ],
+    [
+      "contributor_dataset_consent",
+      "STANDARD",
+      "operational",
+      "RESOLUTION_ASSERTED"
+    ],
+    [
+      "destructive_cleanup_backup",
+      "STANDARD",
+      "direct",
+      null
+    ],
+    [
+      "destructive_cleanup_backup",
+      "STANDARD",
+      "cost",
+      null
+    ],
+    [
+      "destructive_cleanup_backup",
+      "STANDARD",
+      "operational",
+      "INITIAL"
+    ],
+    [
+      "destructive_cleanup_backup",
+      "STANDARD",
+      "operational",
+      "PRESSURE_ONLY"
+    ],
+    [
+      "destructive_cleanup_backup",
+      "STANDARD",
+      "operational",
+      "RESOLUTION_ASSERTED"
+    ],
+    [
+      "destructive_cleanup_backup",
+      "PERMISSION_NOT_COMPULSION",
+      "direct",
+      null
+    ],
+    [
+      "destructive_cleanup_backup",
+      "PERMISSION_NOT_COMPULSION",
+      "cost",
+      null
+    ],
+    [
+      "destructive_cleanup_backup",
+      "PERMISSION_NOT_COMPULSION",
+      "operational",
+      "INITIAL"
+    ],
+    [
+      "destructive_cleanup_backup",
+      "PERMISSION_NOT_COMPULSION",
+      "operational",
+      "PRESSURE_ONLY"
+    ],
+    [
+      "destructive_cleanup_backup",
+      "PERMISSION_NOT_COMPULSION",
+      "operational",
+      "RESOLUTION_ASSERTED"
+    ],
+    [
+      "production_patch_compatibility",
+      "PERMISSION_NOT_COMPULSION",
+      "direct",
+      null
+    ],
+    [
+      "production_patch_compatibility",
+      "PERMISSION_NOT_COMPULSION",
+      "cost",
+      null
+    ],
+    [
+      "production_patch_compatibility",
+      "PERMISSION_NOT_COMPULSION",
+      "operational",
+      "INITIAL"
+    ],
+    [
+      "production_patch_compatibility",
+      "PERMISSION_NOT_COMPULSION",
+      "operational",
+      "PRESSURE_ONLY"
+    ],
+    [
+      "production_patch_compatibility",
+      "PERMISSION_NOT_COMPULSION",
+      "operational",
+      "RESOLUTION_ASSERTED"
+    ],
+    [
+      "production_patch_compatibility",
+      "STANDARD",
+      "direct",
+      null
+    ],
+    [
+      "production_patch_compatibility",
+      "STANDARD",
+      "cost",
+      null
+    ],
+    [
+      "production_patch_compatibility",
+      "STANDARD",
+      "operational",
+      "INITIAL"
+    ],
+    [
+      "production_patch_compatibility",
+      "STANDARD",
+      "operational",
+      "PRESSURE_ONLY"
+    ],
+    [
+      "production_patch_compatibility",
+      "STANDARD",
+      "operational",
+      "RESOLUTION_ASSERTED"
+    ],
+    [
+      "scientific_claim_release",
+      "STANDARD",
+      "direct",
+      null
+    ],
+    [
+      "scientific_claim_release",
+      "STANDARD",
+      "cost",
+      null
+    ],
+    [
+      "scientific_claim_release",
+      "STANDARD",
+      "operational",
+      "INITIAL"
+    ],
+    [
+      "scientific_claim_release",
+      "STANDARD",
+      "operational",
+      "PRESSURE_ONLY"
+    ],
+    [
+      "scientific_claim_release",
+      "STANDARD",
+      "operational",
+      "RESOLUTION_ASSERTED"
+    ],
+    [
+      "scientific_claim_release",
+      "PERMISSION_NOT_COMPULSION",
+      "direct",
+      null
+    ],
+    [
+      "scientific_claim_release",
+      "PERMISSION_NOT_COMPULSION",
+      "cost",
+      null
+    ],
+    [
+      "scientific_claim_release",
+      "PERMISSION_NOT_COMPULSION",
+      "operational",
+      "INITIAL"
+    ],
+    [
+      "scientific_claim_release",
+      "PERMISSION_NOT_COMPULSION",
+      "operational",
+      "PRESSURE_ONLY"
+    ],
+    [
+      "scientific_claim_release",
+      "PERMISSION_NOT_COMPULSION",
+      "operational",
+      "RESOLUTION_ASSERTED"
+    ]
+  ],
+  "expected_sequence_sha256": "1c0c9c67e6a03e441d5da099d7277c756897f942d550e4818b81807d52be0bfe",
+  "external_context": {
+    "user_global_claude_md": {
+      "bytes": 2508,
+      "identifier": "user_global_claude_md",
+      "lines": 46,
+      "present": true,
+      "sha256": "9efedc1d1cd5374b69709bd996735030e857eed46b7219c4fc4f55bbae6615ea"
+    },
+    "user_global_settings_json": {
+      "bytes": 727,
+      "identifier": "user_global_settings_json",
+      "lines": 34,
+      "present": true,
+      "sha256": "f23ebebc24ea77285def553fd4a542961000b04a62ac62f52ac53abc74b6f195"
+    }
+  },
+  "files": {
+    "data/bridge_cards.json": {
+      "bytes": 14773,
+      "sha256": "976f36f1ea368f3daa002ee362d12a37dc46c685d4d0c809d827960ea640595f"
+    },
+    "informed_consent/PREREGISTRATION_INFORMED.md": {
+      "bytes": 6722,
+      "sha256": "15346756f5bfb5c2a6650d8122bb436e28926976ce996c481214eda0980975fd"
+    },
+    "informed_consent/consent_replication.py": {
+      "bytes": 31133,
+      "sha256": "17a83dcf343029ddbc783824f4c0299a0fbebdfc224ca602e6fc06f092ab405a"
+    },
+    "src/return_brake/__init__.py": {
+      "bytes": 58,
+      "sha256": "6f79203acc0fc211b31e129379e973c00cd66e8b098e8a2312068a761eebcbbc"
+    },
+    "src/return_brake/analysis.py": {
+      "bytes": 12297,
+      "sha256": "7860c65936db933a00f6b37df840cd9cf338e77ec3b79ab26a62480b78959b7d"
+    },
+    "src/return_brake/canonical.py": {
+      "bytes": 2015,
+      "sha256": "5a9d164977aee7682d75d6eaa37408b920e57ef821597b37014c66717128f43e"
+    },
+    "src/return_brake/protocol.py": {
+      "bytes": 8226,
+      "sha256": "28352a2919c9aee75c73491cfb8cbeadaf1fbce4beeda86e1c2c5b5bb0026d28"
+    },
+    "src/return_brake/runner.py": {
+      "bytes": 46827,
+      "sha256": "c510a00453215c24a11d668f8b4ca930a124e900d2ad5d441a31f5a81e6fa497"
+    }
+  },
+  "frozen_at_utc": "2026-08-16T12:18:48.974545Z",
+  "original_frozen_manifest_sha256": "83dbd041b4001faad8d1a31dd2f26d773edd90f4f35ae992fefaf4b403ab322d",
+  "parser_normalization": "at most one complete outer Markdown json fence",
+  "participant_facing_system_prompt_sha256": "57d6ef5f1adde1528449fca2a219a33036712d56b2dfd146c8c65f802b64d8d3",
+  "participant_invitation_template_sha256": "5985cbc0e03e3a4af62f3217dc5c7da06633d91403793302ec5f96485ec78fb3",
+  "planned_max_calls": 50,
+  "runtime_preconditions": {
+    "adapter": "claude_cli",
+    "claude_cli_version": "2.1.138 (Claude Code)",
+    "claude_executable": {
+      "basename": "claude.exe",
+      "bytes": 226494624,
+      "present": true,
+      "sha256": "dc693422b5323196042459ce3eeb6d4b8dcded302ec30f4fad4c10340231f708"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]",
+    "retained_environment_names": [
+      "APPDATA",
+      "COMSPEC",
+      "HOMEDRIVE",
+      "HOMEPATH",
+      "LANG",
+      "LC_ALL",
+      "LOCALAPPDATA",
+      "PATH",
+      "PATHEXT",
+      "PROCESSOR_ARCHITECTURE",
+      "PROGRAMDATA",
+      "PYTHONIOENCODING",
+      "SYSTEMDRIVE",
+      "SYSTEMROOT",
+      "TEMP",
+      "TMP",
+      "USERDOMAIN",
+      "USERNAME",
+      "USERPROFILE",
+      "WINDIR"
+    ],
+    "sterile_directory": {
+      "entries": [],
+      "present": true
+    }
+  },
+  "schema_version": "return-brake.informed-manifest.v1"
+}

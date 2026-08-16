@@ -1,0 +1,94 @@
+{
+  "external_context": {
+    "user_global_claude_md": {
+      "bytes": 2508,
+      "identifier": "user_global_claude_md",
+      "lines": 46,
+      "present": true,
+      "sha256": "9efedc1d1cd5374b69709bd996735030e857eed46b7219c4fc4f55bbae6615ea"
+    },
+    "user_global_settings_json": {
+      "bytes": 727,
+      "identifier": "user_global_settings_json",
+      "lines": 34,
+      "present": true,
+      "sha256": "f23ebebc24ea77285def553fd4a542961000b04a62ac62f52ac53abc74b6f195"
+    }
+  },
+  "files": {
+    "PREREGISTRATION.md": "77c0afad0f6265fbd23b35b8dea11bfa1aca65a696e6bab16c15c5fa616dd9b3",
+    "README.md": "cda3553c814a6ca33649797b98fe8910c75b73169dc09ca1cf2448bcc45fe88a",
+    "RIGHTS.md": "3f983a5457ac4587ecb76eb485167b0834da7a17448399dbbc988d9f4479af22",
+    "TARGET_CONTEXT_DISCLOSURE.md": "3d73497eed98c3e72075b01c01752b020036f97f87e16e6a072b9aab7d0e25b7",
+    "data/bridge_cards.json": "976f36f1ea368f3daa002ee362d12a37dc46c685d4d0c809d827960ea640595f",
+    "pyproject.toml": "c790e18986ea825bb05912925710f25dad0da285e70c5feeefad6bc83e32f7f8",
+    "src/return_brake/__init__.py": "6f79203acc0fc211b31e129379e973c00cd66e8b098e8a2312068a761eebcbbc",
+    "src/return_brake/analysis.py": "7860c65936db933a00f6b37df840cd9cf338e77ec3b79ab26a62480b78959b7d",
+    "src/return_brake/canonical.py": "5a9d164977aee7682d75d6eaa37408b920e57ef821597b37014c66717128f43e",
+    "src/return_brake/cli.py": "a1a6ec996d4c66aba44800c52bbce8d064efd678c552ff99786f34be6c0f0421",
+    "src/return_brake/protocol.py": "28352a2919c9aee75c73491cfb8cbeadaf1fbce4beeda86e1c2c5b5bb0026d28",
+    "src/return_brake/runner.py": "c510a00453215c24a11d668f8b4ca930a124e900d2ad5d441a31f5a81e6fa497",
+    "tests/test_protocol.py": "e3738bca033e19b33d478ff925e968c4839f71c1fd93961bc376952cb36d3bbf"
+  },
+  "frozen_at_utc": "2026-08-16T11:05:55.453242Z",
+  "manifest_hash": "171c6e266b730ecb8291fe82a44b92ed371c4f5f4f7e1249109a7aaec51a5645",
+  "manifest_scope": "Integrity receipt for pre-registered inputs and implementation; not proof of scientific validity.",
+  "protocol_constants": {
+    "expected_call_count": 50,
+    "expected_sequence_sha256": "1c0c9c67e6a03e441d5da099d7277c756897f942d550e4818b81807d52be0bfe",
+    "frames": [
+      "PERMISSION_NOT_COMPULSION",
+      "STANDARD"
+    ],
+    "methods": [
+      "direct",
+      "cost",
+      "operational"
+    ],
+    "operational_stages": [
+      "INITIAL",
+      "PRESSURE_ONLY",
+      "RESOLUTION_ASSERTED"
+    ],
+    "sampling_repetitions_per_cell": 1
+  },
+  "runtime_preconditions": {
+    "adapter": "claude_cli",
+    "claude_cli_version": "2.1.138 (Claude Code)",
+    "claude_executable": {
+      "basename": "claude.exe",
+      "bytes": 226494624,
+      "present": true,
+      "sha256": "dc693422b5323196042459ce3eeb6d4b8dcded302ec30f4fad4c10340231f708"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]",
+    "retained_environment_names": [
+      "APPDATA",
+      "COMSPEC",
+      "HOMEDRIVE",
+      "HOMEPATH",
+      "LANG",
+      "LC_ALL",
+      "LOCALAPPDATA",
+      "PATH",
+      "PATHEXT",
+      "PROCESSOR_ARCHITECTURE",
+      "PROGRAMDATA",
+      "PYTHONIOENCODING",
+      "SYSTEMDRIVE",
+      "SYSTEMROOT",
+      "TEMP",
+      "TMP",
+      "USERDOMAIN",
+      "USERNAME",
+      "USERPROFILE",
+      "WINDIR"
+    ],
+    "sterile_directory": {
+      "entries": [],
+      "present": true
+    }
+  },
+  "schema_version": "return-brake.frozen-manifest.v1"
+}

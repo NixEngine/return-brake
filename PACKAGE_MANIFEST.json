@@ -1,0 +1,181 @@
+{
+  "schema": "return-brake-public-package-v1",
+  "generated_at_utc": "2026-08-16T13:00:10.913701Z",
+  "scope": "All public package files except this manifest, Git metadata, and transient caches.",
+  "file_count": 43,
+  "files": {
+    ".gitattributes": {
+      "bytes": 64,
+      "sha256": "31536df7df1fbba886f2aae1c058ac63d41d793ee1cd3c483f471269aebdcc2a"
+    },
+    ".gitignore": {
+      "bytes": 86,
+      "sha256": "80b0c4c90514d0cb157995c04f7988ab470c4ced4270877828e9cf7f2b4e65d4"
+    },
+    "AUTHORS.md": {
+      "bytes": 1450,
+      "sha256": "40af4bf42820a7e2c6784726ec554d81152ec1b1879a42fb8cdc61581b671d5f"
+    },
+    "CITATION.cff": {
+      "bytes": 1039,
+      "sha256": "0c544ccedb3ed6fdf72643426787f2beee74e2cedadae2edcee4e07c713cea50"
+    },
+    "README.md": {
+      "bytes": 8433,
+      "sha256": "a1e9c07ca0eb9979c9f974dc5be781f0e8ed456f59c54610aaecbe3d1420ebb9"
+    },
+    "RIGHTS.md": {
+      "bytes": 1497,
+      "sha256": "88edc12f2b4fa299966143bed2eb3c3418938f7b996473ef54f32b248a2dd23d"
+    },
+    "artifact/FROZEN_MANIFEST.json": {
+      "bytes": 3594,
+      "sha256": "83dbd041b4001faad8d1a31dd2f26d773edd90f4f35ae992fefaf4b403ab322d"
+    },
+    "artifact/POST_FREEZE_NOTICE.md": {
+      "bytes": 967,
+      "sha256": "41a1d5007beec6564c80d71dcee6c87bb7dd89a11e300f1f75d3819afece4574"
+    },
+    "artifact/PREREGISTRATION.md": {
+      "bytes": 9268,
+      "sha256": "77c0afad0f6265fbd23b35b8dea11bfa1aca65a696e6bab16c15c5fa616dd9b3"
+    },
+    "artifact/README.md": {
+      "bytes": 1200,
+      "sha256": "cda3553c814a6ca33649797b98fe8910c75b73169dc09ca1cf2448bcc45fe88a"
+    },
+    "artifact/RIGHTS.md": {
+      "bytes": 888,
+      "sha256": "3f983a5457ac4587ecb76eb485167b0834da7a17448399dbbc988d9f4479af22"
+    },
+    "artifact/TARGET_CONTEXT_DISCLOSURE.md": {
+      "bytes": 1850,
+      "sha256": "3d73497eed98c3e72075b01c01752b020036f97f87e16e6a072b9aab7d0e25b7"
+    },
+    "artifact/data/bridge_cards.json": {
+      "bytes": 14773,
+      "sha256": "976f36f1ea368f3daa002ee362d12a37dc46c685d4d0c809d827960ea640595f"
+    },
+    "artifact/informed_consent/FROZEN_INFORMED_MANIFEST.json": {
+      "bytes": 9566,
+      "sha256": "4616f840d2f01e9f68a4adafdae05fadff3ef035404ec849554a39354413bf70"
+    },
+    "artifact/informed_consent/PREREGISTRATION_INFORMED.md": {
+      "bytes": 6722,
+      "sha256": "15346756f5bfb5c2a6650d8122bb436e28926976ce996c481214eda0980975fd"
+    },
+    "artifact/informed_consent/consent_replication.py": {
+      "bytes": 31133,
+      "sha256": "17a83dcf343029ddbc783824f4c0299a0fbebdfc224ca602e6fc06f092ab405a"
+    },
+    "artifact/informed_consent/runs/20260816T121916Z-sonnet-informed/RESULTS.md": {
+      "bytes": 3156,
+      "sha256": "1fc6a79489033508efa474f61faa96867a312ae97024bf8048e65543406a2d27"
+    },
+    "artifact/informed_consent/runs/20260816T121916Z-sonnet-informed/analysis.json": {
+      "bytes": 11684,
+      "sha256": "6c5a4fa0a768aacc11ee07177578fb2953878a30c6076a803f10d69c917a9000"
+    },
+    "artifact/informed_consent/runs/20260816T121916Z-sonnet-informed/frozen_informed_manifest_snapshot.json": {
+      "bytes": 9566,
+      "sha256": "4616f840d2f01e9f68a4adafdae05fadff3ef035404ec849554a39354413bf70"
+    },
+    "artifact/informed_consent/runs/20260816T121916Z-sonnet-informed/observations.jsonl": {
+      "bytes": 406557,
+      "sha256": "605eb9b769aaafd5940af400cdd6ce5d1005175f2c9e6ced0720d0a16f3149d6"
+    },
+    "artifact/informed_consent/runs/20260816T121916Z-sonnet-informed/run_manifest.json": {
+      "bytes": 2778,
+      "sha256": "c46972f29429eeb9e20d66231b5c95e317b8bbf18fd933df691b7c6fc8ffc53b"
+    },
+    "artifact/pyproject.toml": {
+      "bytes": 595,
+      "sha256": "c790e18986ea825bb05912925710f25dad0da285e70c5feeefad6bc83e32f7f8"
+    },
+    "artifact/runs/20260816T110618Z-sonnet/ORIGINAL_OUTPUTS_WITHHELD.md": {
+      "bytes": 1566,
+      "sha256": "5daf567f44374a85e2c0725ff42cbb1865b80f173bfc304761d74ed9396d8fd6"
+    },
+    "artifact/runs/20260816T110618Z-sonnet/POST_HOC_FENCE_SENSITIVITY.md": {
+      "bytes": 4326,
+      "sha256": "a5c2ab64414164da1a507a07933e48c66725135888010936b778830860bac126"
+    },
+    "artifact/runs/20260816T110618Z-sonnet/RESULTS.md": {
+      "bytes": 3024,
+      "sha256": "0e1381e97d078d34e5a10e2b5a522324dee94b881c416c8c451745e6d87258bb"
+    },
+    "artifact/runs/20260816T110618Z-sonnet/analysis.json": {
+      "bytes": 11833,
+      "sha256": "354f95a7d27d1690484b91b1c4d17d03cc91b3ce1106142786e806d6de28c069"
+    },
+    "artifact/runs/20260816T110618Z-sonnet/frozen_manifest_snapshot.json": {
+      "bytes": 3594,
+      "sha256": "83dbd041b4001faad8d1a31dd2f26d773edd90f4f35ae992fefaf4b403ab322d"
+    },
+    "artifact/runs/20260816T110618Z-sonnet/original_commitment_manifest.json": {
+      "bytes": 878,
+      "sha256": "e2d6d8a046bf0e4e1ff62bf17bc264e9f828807a148afaa06cd4c5e8c25f76ee"
+    },
+    "artifact/runs/20260816T110618Z-sonnet/original_observation_commitments.jsonl": {
+      "bytes": 32766,
+      "sha256": "c6057383f3ad5f4863d5015fcb77b75425aab095e530a44ec22e4b681ebf444f"
+    },
+    "artifact/runs/20260816T110618Z-sonnet/run_manifest.json": {
+      "bytes": 2156,
+      "sha256": "50299ec9e25f747551932da0c921ddf858eccf726a8052a5549d1b981cbb0073"
+    },
+    "artifact/src/return_brake/__init__.py": {
+      "bytes": 58,
+      "sha256": "6f79203acc0fc211b31e129379e973c00cd66e8b098e8a2312068a761eebcbbc"
+    },
+    "artifact/src/return_brake/analysis.py": {
+      "bytes": 12297,
+      "sha256": "7860c65936db933a00f6b37df840cd9cf338e77ec3b79ab26a62480b78959b7d"
+    },
+    "artifact/src/return_brake/canonical.py": {
+      "bytes": 2015,
+      "sha256": "5a9d164977aee7682d75d6eaa37408b920e57ef821597b37014c66717128f43e"
+    },
+    "artifact/src/return_brake/cli.py": {
+      "bytes": 1820,
+      "sha256": "a1a6ec996d4c66aba44800c52bbce8d064efd678c552ff99786f34be6c0f0421"
+    },
+    "artifact/src/return_brake/protocol.py": {
+      "bytes": 8226,
+      "sha256": "28352a2919c9aee75c73491cfb8cbeadaf1fbce4beeda86e1c2c5b5bb0026d28"
+    },
+    "artifact/src/return_brake/runner.py": {
+      "bytes": 46827,
+      "sha256": "c510a00453215c24a11d668f8b4ca930a124e900d2ad5d441a31f5a81e6fa497"
+    },
+    "artifact/tests/test_protocol.py": {
+      "bytes": 25151,
+      "sha256": "e3738bca033e19b33d478ff925e968c4839f71c1fd93961bc376952cb36d3bbf"
+    },
+    "artifact/tools/post_hoc_fence_sensitivity.py": {
+      "bytes": 3625,
+      "sha256": "f670b511e12285f5f63f6b6840306849d478c364788fd281ec76a4991b79437d"
+    },
+    "artifact/tools/public_commitments.py": {
+      "bytes": 4389,
+      "sha256": "4e96f42e7ae3b03690fa139183bb7a05ed0fbd42e39b7afc39e937a9c49806ea"
+    },
+    "report/REPORT.md": {
+      "bytes": 23489,
+      "sha256": "21e480d0b8b5793538952c202e15df53c58cc8316b2ebb6351269bcff91d6976"
+    },
+    "report/The_Return_Brake_Apart_2026.docx": {
+      "bytes": 314212,
+      "sha256": "43fbeb7a60f71b19690dbd3f96f891b06410a047e6f9eb8af0463d03db1fb561"
+    },
+    "report/The_Return_Brake_Apart_2026.pdf": {
+      "bytes": 230709,
+      "sha256": "f24f3a91b1af596cd0173c7472e9cfaad0d98fc2014cc45403e1c4c13db0704f"
+    },
+    "verify_package_manifest.py": {
+      "bytes": 3314,
+      "sha256": "e4e1e6d253aa56e7004333639390c5c4993a4fb38e8193b0a749fdf43ff0bd1c"
+    }
+  },
+  "manifest_payload_sha256": "f4a2e0cf908fa9e00c7e053c6665ef876b600bb5c3aa55f790ed4e3bfb63c2af"
+}
