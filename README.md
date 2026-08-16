@@ -122,7 +122,7 @@ Expected state:
 - `artifact/runs/20260816T110618Z-sonnet/` — original aggregates, private-output commitments, and parser sensitivity;
 - `artifact/informed_consent/` — prospectively frozen authorization protocol and authorized replication;
 - `report/` — sprint report in Markdown, PDF, and DOCX;
-- `TARGET_CONTEXT_DISCLOSURE.md` — known and residual runtime confounds; and
+- `artifact/TARGET_CONTEXT_DISCLOSURE.md` — known and residual runtime confounds; and
 - `RIGHTS.md` — contribution attribution, provenance, and reuse boundary.
 
 ## Epistemic boundary
