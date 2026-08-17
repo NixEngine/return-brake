@@ -1,0 +1,10 @@
+{
+  "schema": "z-polyspine-phase-manifest-v1",
+  "phase_id": "P1",
+  "files": {
+    "successor/z_polyspine/phases/P1/record.json": {
+      "sha256": "9f590458bb91b317324e6a3fada6466500f9b0328581835934dc65c9d9e907d2",
+      "bytes": 3836
+    }
+  }
+}

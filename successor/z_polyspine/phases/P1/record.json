@@ -1,0 +1,105 @@
+{
+  "schema": "z-polyspine-phase-record-v1",
+  "phase_id": "P1",
+  "sequence": 1,
+  "kind": "BEACON_SELECTION",
+  "spines": [
+    "methodology",
+    "ethics-of-unknowing",
+    "contribution-provenance",
+    "public-verifiability",
+    "beacon-selection"
+  ],
+  "retains_phase_ids": [
+    "P0"
+  ],
+  "contributions": [
+    {
+      "principal": "public-platforms",
+      "role": "PLATFORM_MATERIALIZATION",
+      "status": "EXTERNALLY_VERIFIED",
+      "evidence_refs": [
+        "successor/z_polyspine/phases/P1/record.json"
+      ]
+    },
+    {
+      "principal": "codex-session",
+      "role": "COMMAND_DISPATCH",
+      "status": "OBSERVED_IN_SESSION",
+      "evidence_refs": [
+        "successor/z_polyspine/verify.py",
+        "successor/z_polyspine/phases/P1/record.json"
+      ]
+    },
+    {
+      "principal": "local-tools",
+      "role": "VERIFICATION",
+      "status": "OBSERVED_IN_SESSION",
+      "evidence_refs": [
+        "successor/z_polyspine/verify.py",
+        "successor/z_polyspine/phases/P1/record.json"
+      ]
+    }
+  ],
+  "claims": [],
+  "privacy_projection": {
+    "mode": "ALLOWLISTED_PUBLIC_FACTS_ONLY",
+    "source_payload_included": false,
+    "local_paths_included": false,
+    "credentials_included": false
+  },
+  "prior_public_commit": "cbf5ba8fcf81f06fe24d4970e0de860a8eb68cd1",
+  "prior_public_receipt": {
+    "provider": "github_repository_events",
+    "collection_url": "https://api.github.com/repos/NixEngine/return-brake/events",
+    "event_id": "17885060766",
+    "event_type": "PushEvent",
+    "repository": "NixEngine/return-brake",
+    "ref": "refs/heads/successor/z-polyspine-demonstration-v1",
+    "before_sha": "b1f8c710a0c94c4c600b517855bacbfa735c03c6",
+    "head_sha": "cbf5ba8fcf81f06fe24d4970e0de860a8eb68cd1",
+    "created_at_utc": "2026-08-17T03:41:33Z"
+  },
+  "previous_phase_record_sha256": "1941f1fd9b249882858af725d482682355ce3472b66fc015a32a1b4dc8cd1c53",
+  "authorization_ref": "successor/z_polyspine/PREREGISTRATION.json#authorization",
+  "beacon": {
+    "network": "drand-default-mainnet",
+    "chain_hash": "8990e7a9aaed2ffed73dbd7092123d6f289930540d7651336225dc172e51b2ce",
+    "scheme": "pedersen-bls-chained",
+    "round": 6383646,
+    "signature": "875e081553e8c683e00c1d1f129b8edb669df17f7bf01ccd5675dcc6d8dfdfa646eba152c43a892afade70e0328e56d819ab8a2066774d42f67255647f7a53674223bb6509213e6f0c79d3a86830e32d585975f5bb624ead53f8af31fccc74ca",
+    "previous_signature": "b829409fdb3a1bb6f75e7d6af232450211e193416871a100a58805411b5fb542b15617a5ca4c8ef8269b34cc8477388b171e0123bf8bbd5a7cbb6b908b05407a2589928ea44f2fd21dac786560d9c33000142d0c1655926318f1193e604b9bac",
+    "randomness": "4564b708eabe5da21278414ae97e246959b04dea2f796b17fd863f04c13989a7",
+    "relay_observations": [
+      {
+        "relay": "https://api.drand.sh",
+        "http_date_utc": "2026-08-17T04:20:30Z",
+        "normalized_response_sha256": "af5ead0c071a28ed85919809a43a7ffa31c4fdd0f13b6bc511cde82314bf0ca5"
+      },
+      {
+        "relay": "https://api2.drand.sh",
+        "http_date_utc": "2026-08-17T04:20:32Z",
+        "normalized_response_sha256": "af5ead0c071a28ed85919809a43a7ffa31c4fdd0f13b6bc511cde82314bf0ca5"
+      },
+      {
+        "relay": "https://api3.drand.sh",
+        "http_date_utc": "2026-08-17T04:20:33Z",
+        "normalized_response_sha256": "af5ead0c071a28ed85919809a43a7ffa31c4fdd0f13b6bc511cde82314bf0ca5"
+      }
+    ]
+  },
+  "selection": [
+    {
+      "id": "append_only_git_binding",
+      "rank_digest": "0994fd7f88ae800cef2e3bcddb78d00d892ffafffa9c8a1af40757379659f6c8"
+    },
+    {
+      "id": "claim_status_boundaries",
+      "rank_digest": "1f2b0c358ecaff085ea1cdadd57fd6d590307dd38d345dba92f010755c5fdb60"
+    },
+    {
+      "id": "contribution_role_separation",
+      "rank_digest": "334b606e5df4d965dde5968172696d436340c3cb186f3a39b8c2ae26f88754bc"
+    }
+  ]
+}
