@@ -115,6 +115,23 @@ Expected state:
 
 ## Repository map
 
+## Research-package navigation
+
+For readers evaluating the method rather than only the headline result:
+
+- [`report/REPORT.md`](report/REPORT.md) — full protocol, correction history, results, and limitations;
+- [`drafts/ISR_extended_abstract_2026-08-17.md`](drafts/ISR_extended_abstract_2026-08-17.md) — submission-oriented extended abstract;
+- [`drafts/ISR_evidence_table_2026-08-17.md`](drafts/ISR_evidence_table_2026-08-17.md) — claim-to-receipt map with status boundaries;
+- [`drafts/ISR_genai_use_appendix_2026-08-17.md`](drafts/ISR_genai_use_appendix_2026-08-17.md) — draft disclosure of AI participation and human oversight;
+- [`output/pdf/ISR_genai_use_appendix_2026-08-17.pdf`](output/pdf/ISR_genai_use_appendix_2026-08-17.pdf) — rendered appendix draft for venues requiring PDF;
+- [`output/ISR_genai_code_2026-08-17.zip`](output/ISR_genai_code_2026-08-17.zip) — clean code/test/tools bundle without caches or run outputs;
+- [`drafts/lesswrong_open_thread_draft_2026-08-17.md`](drafts/lesswrong_open_thread_draft_2026-08-17.md) — short public discussion draft; and
+- [`PUBLIC_RELEASE_CHECKLIST_2026-08-17.md`](PUBLIC_RELEASE_CHECKLIST_2026-08-17.md) — release gate for future external publication; and
+- [`SUBMISSION_PACKET_2026-08-17.md`](SUBMISSION_PACKET_2026-08-17.md) — short public message and submission ledger; and
+- [`PACKAGE_MANIFEST.json`](PACKAGE_MANIFEST.json) — current package integrity manifest.
+
+The `drafts/` files are working documents and are not part of the frozen experimental root. They may evolve without changing the hashes or interpretation of the original and informed runs.
+
 - `artifact/` — byte-preserved original frozen root plus all executable research artifacts; begin with `artifact/POST_FREEZE_NOTICE.md`;
 - `artifact/PREREGISTRATION.md` and `artifact/FROZEN_MANIFEST.json` — original frozen design;
 - `artifact/data/bridge_cards.json` — method bridges and critical preconditions;

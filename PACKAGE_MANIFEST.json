@@ -1,8 +1,8 @@
 {
   "schema": "return-brake-public-package-v1",
-  "generated_at_utc": "2026-08-16T13:03:21.246601Z",
+  "generated_at_utc": "2026-08-17T08:46:03.778390Z",
   "scope": "All public package files except this manifest, Git metadata, and transient caches.",
-  "file_count": 43,
+  "file_count": 54,
   "files": {
     ".gitattributes": {
       "bytes": 64,
@@ -20,13 +20,25 @@
       "bytes": 1039,
       "sha256": "0c544ccedb3ed6fdf72643426787f2beee74e2cedadae2edcee4e07c713cea50"
     },
+    "NEXT_PUBLIC_ACTIONS_2026-08-17.md": {
+      "bytes": 4776,
+      "sha256": "1ccd4f2c33becace181b18953522a83e2db5479d6232f801c9ff45b5dbc20f4b"
+    },
+    "PUBLIC_RELEASE_CHECKLIST_2026-08-17.md": {
+      "bytes": 2513,
+      "sha256": "8fdd543bd8e73f1f64e52668390f8c1924a009aeef087ec8d953c0633b2d9440"
+    },
     "README.md": {
-      "bytes": 8442,
-      "sha256": "e89821be0c5b6fded424ad2664afcaff72373777cd757bcf0d78813857ac68d4"
+      "bytes": 10074,
+      "sha256": "00d9a208e1437b50e6937cffec5dcbdaec1dbc47cc68c95107248121790e61b8"
     },
     "RIGHTS.md": {
       "bytes": 1497,
       "sha256": "88edc12f2b4fa299966143bed2eb3c3418938f7b996473ef54f32b248a2dd23d"
+    },
+    "SUBMISSION_PACKET_2026-08-17.md": {
+      "bytes": 2410,
+      "sha256": "90de4b9294b7ee2f3eef02da8638df17801ed7213db94de22ff499ba35753157"
     },
     "artifact/FROZEN_MANIFEST.json": {
       "bytes": 3594,
@@ -160,6 +172,34 @@
       "bytes": 4389,
       "sha256": "4e96f42e7ae3b03690fa139183bb7a05ed0fbd42e39b7afc39e937a9c49806ea"
     },
+    "drafts/ISR_evidence_table_2026-08-17.md": {
+      "bytes": 3877,
+      "sha256": "f26157af81cbafac83b21d628806a2dd64acdd8631b70e4f258a2311dcb06985"
+    },
+    "drafts/ISR_extended_abstract_2026-08-17.md": {
+      "bytes": 9147,
+      "sha256": "3e13ad46db6fce25cb130d2e97dc1b3916d96bdc21d9bb9505efa9f3c4bd2e73"
+    },
+    "drafts/ISR_genai_use_appendix_2026-08-17.md": {
+      "bytes": 3668,
+      "sha256": "24a3a9b66ea74d3976ec1debe3632b9361e7ad3781b1968284f004026420c0ba"
+    },
+    "drafts/ISR_special_issue_outline_2026-08-17.md": {
+      "bytes": 7718,
+      "sha256": "f6e83cb84669a3c3d635793cef6daf361330cc47391fcd40a4a7f77b3ad8006f"
+    },
+    "drafts/lesswrong_open_thread_draft_2026-08-17.md": {
+      "bytes": 1556,
+      "sha256": "a0acb2cd97c077b73191221099c623f62d60c7160ae5e8f5a85d3e13dedb4a28"
+    },
+    "output/ISR_genai_code_2026-08-17.zip": {
+      "bytes": 34856,
+      "sha256": "6ae377879437cf31a179f53acfddd2c3396c09634208274c01c04e06e95f970f"
+    },
+    "output/pdf/ISR_genai_use_appendix_2026-08-17.pdf": {
+      "bytes": 5110,
+      "sha256": "9c229e5bf3e9b43d614415aa570a3419acbebb22f7204652d19725b12f787f52"
+    },
     "report/REPORT.md": {
       "bytes": 23489,
       "sha256": "21e480d0b8b5793538952c202e15df53c58cc8316b2ebb6351269bcff91d6976"
@@ -172,10 +212,14 @@
       "bytes": 230709,
       "sha256": "f24f3a91b1af596cd0173c7472e9cfaad0d98fc2014cc45403e1c4c13db0704f"
     },
+    "tools/build_genai_appendix_pdf.py": {
+      "bytes": 3147,
+      "sha256": "453a267c57ac3738513bf59d9867869f4a1bb4f573c95c6808405fcd680d1652"
+    },
     "verify_package_manifest.py": {
       "bytes": 3314,
       "sha256": "e4e1e6d253aa56e7004333639390c5c4993a4fb38e8193b0a749fdf43ff0bd1c"
     }
   },
-  "manifest_payload_sha256": "f4ce3e7983d45d9a75d474a7843574fe136f0639112cfc66260437d191f36f25"
+  "manifest_payload_sha256": "cb5e5ece8fb9afcb936a025283ffd7990702b3e28b5e166ac0513019d19619fd"
 }
