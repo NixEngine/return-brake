@@ -1,0 +1,114 @@
+{
+  "schema": "z-polyspine-phase-record-v1",
+  "phase_id": "P3",
+  "sequence": 3,
+  "kind": "REVISION",
+  "spines": [
+    "methodology",
+    "ethics-of-unknowing",
+    "contribution-provenance",
+    "public-verifiability",
+    "beacon-selection",
+    "audit-observation",
+    "typed-revision"
+  ],
+  "retains_phase_ids": [
+    "P0",
+    "P1",
+    "P2"
+  ],
+  "prior_public_commit": "290d50ad10dee538ce43f0304ec618b4bf715ddd",
+  "prior_public_receipt": {
+    "provider": "github_repository_events",
+    "collection_url": "https://api.github.com/repos/NixEngine/return-brake/events",
+    "event_id": "17889505546",
+    "event_type": "PushEvent",
+    "repository": "NixEngine/return-brake",
+    "ref": "refs/heads/successor/z-polyspine-demonstration-v1",
+    "before_sha": "77b188d05ee54b9078788b55bfeb3aece136ceee",
+    "head_sha": "290d50ad10dee538ce43f0304ec618b4bf715ddd",
+    "created_at_utc": "2026-08-17T04:42:52Z"
+  },
+  "previous_phase_record_sha256": "c7e498dbee214cd9ad484f2fcc6f3b003577605da12ce272a3d4bd45d4c851ba",
+  "authorization_ref": "successor/z_polyspine/PREREGISTRATION.json#authorization",
+  "basis_phase_id": "P2",
+  "contributions": [
+    {
+      "principal": "codex-session",
+      "role": "IMPLEMENTATION_AUTHORING",
+      "status": "OBSERVED_IN_SESSION",
+      "evidence_refs": [
+        "successor/z_polyspine/phases/P2/record.json",
+        "successor/z_polyspine/phases/P3/record.json"
+      ]
+    },
+    {
+      "principal": "local-tools",
+      "role": "VERIFICATION",
+      "status": "OBSERVED_IN_SESSION",
+      "evidence_refs": [
+        "successor/z_polyspine/verify.py",
+        "successor/z_polyspine/phases/P3/record.json"
+      ]
+    }
+  ],
+  "claims": [],
+  "privacy_projection": {
+    "mode": "ALLOWLISTED_PUBLIC_FACTS_ONLY",
+    "source_payload_included": false,
+    "local_paths_included": false,
+    "credentials_included": false
+  },
+  "finding_dispositions": [
+    {
+      "finding_id": "p2-f01",
+      "disposition": "RETAIN",
+      "rationale_code": "CURRENT_SPINE_RETAINED"
+    },
+    {
+      "finding_id": "p2-f02",
+      "disposition": "ADD_SUCCESSOR",
+      "rationale_code": "VERIFIER_EVIDENCE_SUPPORTS_SUCCESSOR"
+    },
+    {
+      "finding_id": "p2-f03",
+      "disposition": "ADD_SUCCESSOR",
+      "rationale_code": "VERIFIER_EVIDENCE_SUPPORTS_SUCCESSOR"
+    }
+  ],
+  "active_heads": [
+    "p2-audit-observation",
+    "p3-claim-status-successor",
+    "p3-contribution-role-successor"
+  ],
+  "changes": [
+    {
+      "id": "p3-c01",
+      "basis_finding_ids": [
+        "p2-f02"
+      ],
+      "action": "ADD_TYPED_BOUNDARY"
+    },
+    {
+      "id": "p3-c02",
+      "basis_finding_ids": [
+        "p2-f02"
+      ],
+      "action": "ADD_TEST"
+    },
+    {
+      "id": "p3-c03",
+      "basis_finding_ids": [
+        "p2-f03"
+      ],
+      "action": "ADD_TYPED_BOUNDARY"
+    },
+    {
+      "id": "p3-c04",
+      "basis_finding_ids": [
+        "p2-f03"
+      ],
+      "action": "ADD_TEST"
+    }
+  ]
+}
