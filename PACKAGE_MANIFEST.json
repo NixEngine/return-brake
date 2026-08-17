@@ -1,8 +1,8 @@
 {
   "schema": "return-brake-public-package-v1",
-  "generated_at_utc": "2026-08-17T04:50:40Z",
+  "generated_at_utc": "2026-08-17T05:20:40Z",
   "scope": "All public package files except this manifest, Git metadata, and transient caches.",
-  "file_count": 62,
+  "file_count": 68,
   "files": {
     ".gitattributes": {
       "bytes": 64,
@@ -172,6 +172,30 @@
       "bytes": 230709,
       "sha256": "f24f3a91b1af596cd0173c7472e9cfaad0d98fc2014cc45403e1c4c13db0704f"
     },
+    "successor/causal_influence_observer_resolution_v1/README.md": {
+      "bytes": 7490,
+      "sha256": "65a74a10b0929053335cfcfb8cfa8dfc8e4613750c38064eef9e390faf8fd693"
+    },
+    "successor/causal_influence_observer_resolution_v1/artifacts/SHA256SUMS": {
+      "bytes": 424,
+      "sha256": "b4ebaac1c717b2f0ac0f6472431997ff43a406dd884fc8940f5051f673c4f658"
+    },
+    "successor/causal_influence_observer_resolution_v1/artifacts/checkpoints.csv": {
+      "bytes": 2744,
+      "sha256": "bc1a9734ef881bad6362c528e2be607a50036c564cd844e74a236fb1e3c0b78f"
+    },
+    "successor/causal_influence_observer_resolution_v1/artifacts/results.json": {
+      "bytes": 12112,
+      "sha256": "83de206bdcca95163d0e27e665d78de8c1c025e571125cdf38344002f59feb72"
+    },
+    "successor/causal_influence_observer_resolution_v1/causal_demo.py": {
+      "bytes": 26133,
+      "sha256": "3de34a2779c1dc084744d5d4ecfac2bf3896ad753ac820dd04feb1c02a4890b7"
+    },
+    "successor/causal_influence_observer_resolution_v1/test_causal_demo.py": {
+      "bytes": 6142,
+      "sha256": "c1d4b5bfdc4f692fa5988bf7fff0fb9934073d78fa24fc874b57482ac4b82663"
+    },
     "successor/z_polyspine/.gitignore": {
       "bytes": 23,
       "sha256": "6feaded4e28ea86e001a6751b4e3d960e8b7c31b9616ff9936b79297086e809b"
@@ -253,5 +277,5 @@
       "sha256": "e4e1e6d253aa56e7004333639390c5c4993a4fb38e8193b0a749fdf43ff0bd1c"
     }
   },
-  "manifest_payload_sha256": "6f245dddfa0fb00fbdd0f98bcf5b4d3b69bab80e9aea662c3954e822afe7e3f0"
+  "manifest_payload_sha256": "ae71513ab91967e4f3853368b9109be51acd35a49acbba726a212256e6f9e94b"
 }

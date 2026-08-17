@@ -1,0 +1,549 @@
+{
+  "constants": {
+    "t0": 0,
+    "t1": 500000,
+    "t2": 1000000,
+    "t3": 1500000
+  },
+  "full_history_observation": {
+    "coverage": "complete A and B contact frame at t0, pre/post velocities, and trusted contact rule",
+    "identifies_touch_within_model": true,
+    "w1_a_b_event_through_t2": [
+      {
+        "approaching_on_realized_trajectory": true,
+        "contact_point": [
+          "0",
+          "0"
+        ],
+        "normal": [
+          1,
+          0
+        ],
+        "pair": [
+          "A",
+          "B"
+        ],
+        "post_velocity": {
+          "A": [
+            0,
+            1
+          ],
+          "B": [
+            1,
+            -1
+          ]
+        },
+        "pre_velocity": {
+          "A": [
+            1,
+            1
+          ],
+          "B": [
+            0,
+            -1
+          ]
+        },
+        "rule": "exchange vx; preserve vy",
+        "tick": 0
+      }
+    ],
+    "w_alt_a_b_event_through_t2": []
+  },
+  "late_observation": {
+    "exact_frame_comparison": {
+      "W1_vs_W0": {
+        "equal": false,
+        "first_mismatch_tick": 500000,
+        "frames_compared": 500001,
+        "mismatch_count": 500001
+      },
+      "W1_vs_W_alt": {
+        "equal": true,
+        "first_mismatch_tick": null,
+        "frames_compared": 500001,
+        "mismatch_count": 0
+      }
+    },
+    "frame_count": 500001,
+    "frame_encoding": "struct.pack('>5q', tick, x, y, vx, vy)",
+    "identifies_a_b_touch_by_itself": false,
+    "non_identifiability_witness": "W1 has A-B contact; W_alt does not; their complete late B projections are identical",
+    "observer_projection": "B only: (tick,x,y,vx,vy)",
+    "samples_by_world": {
+      "W0": {
+        "1000000": {
+          "vx": 0,
+          "vy": -1,
+          "x": 1,
+          "y": -1000000
+        },
+        "500000": {
+          "vx": 0,
+          "vy": -1,
+          "x": 1,
+          "y": -500000
+        },
+        "750000": {
+          "vx": 0,
+          "vy": -1,
+          "x": 1,
+          "y": -750000
+        }
+      },
+      "W1": {
+        "1000000": {
+          "vx": 1,
+          "vy": -1,
+          "x": 1000001,
+          "y": -1000000
+        },
+        "500000": {
+          "vx": 1,
+          "vy": -1,
+          "x": 500001,
+          "y": -500000
+        },
+        "750000": {
+          "vx": 1,
+          "vy": -1,
+          "x": 750001,
+          "y": -750000
+        }
+      },
+      "W_alt": {
+        "1000000": {
+          "vx": 1,
+          "vy": -1,
+          "x": 1000001,
+          "y": -1000000
+        },
+        "500000": {
+          "vx": 1,
+          "vy": -1,
+          "x": 500001,
+          "y": -500000
+        },
+        "750000": {
+          "vx": 1,
+          "vy": -1,
+          "x": 750001,
+          "y": -750000
+        }
+      }
+    },
+    "sha256_by_world": {
+      "W0": "f1a0f8d46a7b36da78d4894a7a7b72ade809df8c33943c828c78dff98e74f8e5",
+      "W1": "60f8ad9aa9d6997353f9392b64f2f680939617fb2aff5601967d2b7cca3dd20a",
+      "W_alt": "60f8ad9aa9d6997353f9392b64f2f680939617fb2aff5601967d2b7cca3dd20a"
+    },
+    "w1_equals_w0": false,
+    "w1_equals_w_alt": true,
+    "window_inclusive": [
+      500000,
+      1000000
+    ]
+  },
+  "limits": [
+    "The global persistence theorem is conditional on deterministic injective closed dynamics.",
+    "Injectivity of the global state does not imply persistent identifiability in a subsystem projection.",
+    "Per-body persistence is verified for this constructed trajectory, not inferred from injectivity alone.",
+    "The full-history attribution is exact only within the specified model and trusted observation coverage.",
+    "No claim is made that the physical cosmos is exactly closed, injective, noiseless, or reconstructable.",
+    "The reversible tangent gate is a mathematical rule, not a general rigid-body collision simulator; every contact on the demonstrated trajectory is approaching.",
+    "Forever means every finite future tick under the model, not an empirical measurement of infinite time."
+  ],
+  "matched_counterfactual": {
+    "c_state_at_t3_plus_1": {
+      "W0": {
+        "vx": 0,
+        "vy": 0,
+        "x": 1500003,
+        "y": -1500000
+      },
+      "W1": {
+        "vx": 1,
+        "vy": 0,
+        "x": 1500004,
+        "y": -1500000
+      },
+      "W_alt": {
+        "vx": 1,
+        "vy": 0,
+        "x": 1500004,
+        "y": -1500000
+      }
+    },
+    "effect_reaches_c": true,
+    "physical_differences": {
+      "1": {
+        "differing_fields_by_body": {
+          "A": [
+            "x",
+            "vx"
+          ],
+          "B": [
+            "x",
+            "vx"
+          ],
+          "C": []
+        },
+        "global_states_equal": false
+      },
+      "1000000": {
+        "differing_fields_by_body": {
+          "A": [
+            "x",
+            "vx"
+          ],
+          "B": [
+            "x",
+            "vx"
+          ],
+          "C": []
+        },
+        "global_states_equal": false
+      },
+      "1000000000000": {
+        "differing_fields_by_body": {
+          "A": [
+            "x",
+            "vx"
+          ],
+          "B": [
+            "x"
+          ],
+          "C": [
+            "x",
+            "vx"
+          ]
+        },
+        "global_states_equal": false
+      },
+      "1500000": {
+        "differing_fields_by_body": {
+          "A": [
+            "x",
+            "vx"
+          ],
+          "B": [
+            "x",
+            "vx"
+          ],
+          "C": []
+        },
+        "global_states_equal": false
+      },
+      "1500001": {
+        "differing_fields_by_body": {
+          "A": [
+            "x",
+            "vx"
+          ],
+          "B": [
+            "x"
+          ],
+          "C": [
+            "x",
+            "vx"
+          ]
+        },
+        "global_states_equal": false
+      },
+      "500000": {
+        "differing_fields_by_body": {
+          "A": [
+            "x",
+            "vx"
+          ],
+          "B": [
+            "x",
+            "vx"
+          ],
+          "C": []
+        },
+        "global_states_equal": false
+      }
+    },
+    "w1_and_w0_pre_contact_states_equal": true
+  },
+  "model": {
+    "body_radius": 1,
+    "contact_predicate": "same y and absolute center-x separation 2",
+    "contact_rule": "fixed-order conditional swap of pair vx; preserve vy",
+    "counterfactual_intervention": "W0 replaces only G_AB with identity at t0",
+    "free_flight": "x += vx; y += vy",
+    "gate_scope": "reversible mathematical tangent gate; all realized witness contacts are approaching",
+    "numeric_domain": "exact integers; no floating point",
+    "ordinary_tick_map": "bijective",
+    "space": "unbounded integer lattice Z^2",
+    "time": "integer ticks"
+  },
+  "proof_checks": {
+    "all_roundtrip_samples_pass": true,
+    "closed_form_trajectory": {
+      "for_1_le_n_le_t3": {
+        "W0_A": "(n-1,n,1,1)",
+        "W0_B": "(1,-n,0,-1)",
+        "W1_A": "(-1,n,0,1)",
+        "W1_B": "(n+1,-n,1,-1)"
+      },
+      "for_n_ge_t3_plus_1": {
+        "W0_A": "(n-1,n,1,1)",
+        "W0_B": "(1,-n,0,-1)",
+        "W0_C": "(t3+3,-t3,0,0)",
+        "W1_A": "(-1,n,0,1)",
+        "W1_B": "(t3+1,-n,0,-1)",
+        "W1_C": "(n+3,-t3,1,0)"
+      }
+    },
+    "future_probe_tick_is_example_not_proof": 1000000000000,
+    "proof_method": "injectivity plus contradiction by repeated inverse application",
+    "standard_step_roundtrip_samples": [
+      true,
+      true,
+      true
+    ],
+    "w1_w0_distinct_at_every_reported_future_checkpoint": true
+  },
+  "schema": "causal-influence-demo/v1",
+  "transmission_trace": {
+    "annotation_status": "derived audit labels; not additional physical degrees of freedom",
+    "w1": [
+      {
+        "pair": [
+          "A",
+          "B"
+        ],
+        "tick": 0,
+        "vx_lineage_after_contact": {
+          "A": "B.vx@t0-",
+          "B": "A.vx@t0-",
+          "C": "C.vx@t0-"
+        }
+      },
+      {
+        "pair": [
+          "B",
+          "C"
+        ],
+        "tick": 1500000,
+        "vx_lineage_after_contact": {
+          "A": "B.vx@t0-",
+          "B": "C.vx@t0-",
+          "C": "A.vx@t0-"
+        }
+      }
+    ],
+    "w1_c_vx_lineage_after_t3": "A.vx@t0-",
+    "w_alt": [
+      {
+        "pair": [
+          "B",
+          "C"
+        ],
+        "tick": 1500000,
+        "vx_lineage_after_contact": {
+          "A": "A.vx@t0-",
+          "B": "C.vx@t0-",
+          "C": "B.vx@t0-"
+        }
+      }
+    ],
+    "w_alt_c_vx_lineage_after_t3": "B.vx@t0-"
+  },
+  "worlds": {
+    "W0": {
+      "events_through_future_probe": [],
+      "initial_pre_contact_state": {
+        "A": {
+          "vx": 1,
+          "vy": 1,
+          "x": -1,
+          "y": 0
+        },
+        "B": {
+          "vx": 0,
+          "vy": -1,
+          "x": 1,
+          "y": 0
+        },
+        "C": {
+          "vx": 0,
+          "vy": 0,
+          "x": 1500003,
+          "y": -1500000
+        }
+      },
+      "suppressed_contact_gates": [
+        {
+          "pair": [
+            "A",
+            "B"
+          ],
+          "tick": 0
+        }
+      ]
+    },
+    "W1": {
+      "events_through_future_probe": [
+        {
+          "approaching_on_realized_trajectory": true,
+          "contact_point": [
+            "0",
+            "0"
+          ],
+          "normal": [
+            1,
+            0
+          ],
+          "pair": [
+            "A",
+            "B"
+          ],
+          "post_velocity": {
+            "A": [
+              0,
+              1
+            ],
+            "B": [
+              1,
+              -1
+            ]
+          },
+          "pre_velocity": {
+            "A": [
+              1,
+              1
+            ],
+            "B": [
+              0,
+              -1
+            ]
+          },
+          "rule": "exchange vx; preserve vy",
+          "tick": 0
+        },
+        {
+          "approaching_on_realized_trajectory": true,
+          "contact_point": [
+            "1500002",
+            "-1500000"
+          ],
+          "normal": [
+            1,
+            0
+          ],
+          "pair": [
+            "B",
+            "C"
+          ],
+          "post_velocity": {
+            "B": [
+              0,
+              -1
+            ],
+            "C": [
+              1,
+              0
+            ]
+          },
+          "pre_velocity": {
+            "B": [
+              1,
+              -1
+            ],
+            "C": [
+              0,
+              0
+            ]
+          },
+          "rule": "exchange vx; preserve vy",
+          "tick": 1500000
+        }
+      ],
+      "initial_pre_contact_state": {
+        "A": {
+          "vx": 1,
+          "vy": 1,
+          "x": -1,
+          "y": 0
+        },
+        "B": {
+          "vx": 0,
+          "vy": -1,
+          "x": 1,
+          "y": 0
+        },
+        "C": {
+          "vx": 0,
+          "vy": 0,
+          "x": 1500003,
+          "y": -1500000
+        }
+      },
+      "suppressed_contact_gates": []
+    },
+    "W_alt": {
+      "events_through_future_probe": [
+        {
+          "approaching_on_realized_trajectory": true,
+          "contact_point": [
+            "1500002",
+            "-1500000"
+          ],
+          "normal": [
+            1,
+            0
+          ],
+          "pair": [
+            "B",
+            "C"
+          ],
+          "post_velocity": {
+            "B": [
+              0,
+              -1
+            ],
+            "C": [
+              1,
+              0
+            ]
+          },
+          "pre_velocity": {
+            "B": [
+              1,
+              -1
+            ],
+            "C": [
+              0,
+              0
+            ]
+          },
+          "rule": "exchange vx; preserve vy",
+          "tick": 1500000
+        }
+      ],
+      "initial_pre_contact_state": {
+        "A": {
+          "vx": 0,
+          "vy": 0,
+          "x": -100,
+          "y": 100
+        },
+        "B": {
+          "vx": 1,
+          "vy": -1,
+          "x": 1,
+          "y": 0
+        },
+        "C": {
+          "vx": 0,
+          "vy": 0,
+          "x": 1500003,
+          "y": -1500000
+        }
+      },
+      "suppressed_contact_gates": []
+    }
+  }
+}
