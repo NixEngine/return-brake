@@ -1,0 +1,149 @@
+{
+  "schema": "z-polyspine-phase-record-v1",
+  "phase_id": "P2",
+  "sequence": 2,
+  "kind": "AUDIT_OBSERVATION",
+  "spines": [
+    "methodology",
+    "ethics-of-unknowing",
+    "contribution-provenance",
+    "public-verifiability",
+    "beacon-selection",
+    "audit-observation"
+  ],
+  "retains_phase_ids": [
+    "P0",
+    "P1"
+  ],
+  "prior_public_commit": "77b188d05ee54b9078788b55bfeb3aece136ceee",
+  "prior_public_receipt": {
+    "provider": "github_repository_events",
+    "collection_url": "https://api.github.com/repos/NixEngine/return-brake/events",
+    "event_id": "17888047648",
+    "event_type": "PushEvent",
+    "repository": "NixEngine/return-brake",
+    "ref": "refs/heads/successor/z-polyspine-demonstration-v1",
+    "before_sha": "cbf5ba8fcf81f06fe24d4970e0de860a8eb68cd1",
+    "head_sha": "77b188d05ee54b9078788b55bfeb3aece136ceee",
+    "created_at_utc": "2026-08-17T04:22:56Z"
+  },
+  "previous_phase_record_sha256": "9f590458bb91b317324e6a3fada6466500f9b0328581835934dc65c9d9e907d2",
+  "authorization_ref": "successor/z_polyspine/PREREGISTRATION.json#authorization",
+  "contributions": [
+    {
+      "principal": "codex-session",
+      "role": "VERIFICATION",
+      "status": "OBSERVED_IN_SESSION",
+      "evidence_refs": [
+        "successor/z_polyspine/phases/P1/record.json",
+        "successor/z_polyspine/phases/P2/record.json"
+      ]
+    },
+    {
+      "principal": "local-tools",
+      "role": "TEST_EXECUTION",
+      "status": "OBSERVED_IN_SESSION",
+      "evidence_refs": [
+        "successor/z_polyspine/verify.py",
+        "successor/z_polyspine/phases/P2/record.json"
+      ]
+    }
+  ],
+  "claims": [],
+  "privacy_projection": {
+    "mode": "ALLOWLISTED_PUBLIC_FACTS_ONLY",
+    "source_payload_included": false,
+    "local_paths_included": false,
+    "credentials_included": false
+  },
+  "audit": {
+    "execution_declaration": {
+      "executor": "FRESH_CODEX_SUBAGENT",
+      "isolation": "FORK_TURNS_NONE",
+      "attestation_status": "SESSION_DECLARED_NOT_EXTERNALLY_ATTESTED"
+    },
+    "selected_surfaces": [
+      "append_only_git_binding",
+      "claim_status_boundaries",
+      "contribution_role_separation"
+    ],
+    "finding_count": 3,
+    "findings": [
+      {
+        "id": "p2-f01",
+        "surface": "append_only_git_binding",
+        "result": "PASS",
+        "status": "OBSERVED",
+        "verifier_codes": [
+          "PHASE_IMMUTABILITY_FAILURE"
+        ],
+        "reproduction": [
+          "append_only_git_binding"
+        ]
+      },
+      {
+        "id": "p2-f02",
+        "surface": "claim_status_boundaries",
+        "result": "FAIL",
+        "status": "OBSERVED",
+        "verifier_codes": [
+          "CLAIM_STATUS_INVALID",
+          "CLAIM_PREDICATE_INVALID"
+        ],
+        "reproduction": [
+          "claim_status_boundaries"
+        ]
+      },
+      {
+        "id": "p2-f03",
+        "surface": "contribution_role_separation",
+        "result": "FAIL",
+        "status": "OBSERVED",
+        "verifier_codes": [
+          "MATERIAL_ROLES_COLLAPSED"
+        ],
+        "reproduction": [
+          "contribution_role_separation"
+        ]
+      }
+    ],
+    "replay": [
+      {
+        "surface": "append_only_git_binding",
+        "command": [
+          "python",
+          "successor/z_polyspine/verify.py",
+          "replay",
+          "--surface",
+          "append_only_git_binding"
+        ],
+        "expected_exit_code": 0,
+        "normalized_stdout_sha256": "4e887db083fc0278f7be065eaa54255d5b6a45d7fb85bed9ac4b9449c6da9718"
+      },
+      {
+        "surface": "claim_status_boundaries",
+        "command": [
+          "python",
+          "successor/z_polyspine/verify.py",
+          "replay",
+          "--surface",
+          "claim_status_boundaries"
+        ],
+        "expected_exit_code": 0,
+        "normalized_stdout_sha256": "dacc2dd72496a04be67c588fdce559b0aa63f2c48f7a1c79d856cc4515c89aa0"
+      },
+      {
+        "surface": "contribution_role_separation",
+        "command": [
+          "python",
+          "successor/z_polyspine/verify.py",
+          "replay",
+          "--surface",
+          "contribution_role_separation"
+        ],
+        "expected_exit_code": 0,
+        "normalized_stdout_sha256": "1ee5e36fbfe42527e07af46a232202f041cea6911f118ea8cdb06d82e29dfd9a"
+      }
+    ]
+  }
+}
