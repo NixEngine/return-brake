@@ -1,0 +1,27 @@
+{
+  "schema": "z-polyspine-claim-status-successor-v1",
+  "parent": {
+    "phase_id": "P3",
+    "commit": "183c3507ed6af268140573e6483b1bacb30de373",
+    "record_path": "successor/z_polyspine/phases/P3/record.json",
+    "record_sha256": "7eab2cfc6ed35186fa750273c10dea6ae56b731899e1bf1b70e5d8987c5444fe"
+  },
+  "basis_finding": {
+    "phase_id": "P2",
+    "record_path": "successor/z_polyspine/phases/P2/record.json",
+    "id": "p2-f02",
+    "surface": "claim_status_boundaries",
+    "result": "FAIL",
+    "disposition": "ADD_SUCCESSOR"
+  },
+  "frozen_baseline": {
+    "source_commit": "cbf5ba8fcf81f06fe24d4970e0de860a8eb68cd1",
+    "protocol_path": "successor/z_polyspine/CONTRIBUTION_PROTOCOL.json",
+    "protocol_sha256": "f9b795c68345182f025b052240aeac22aab4479aee25370564338390488a992d",
+    "claim_id_field": "id",
+    "immutable_type_fields": [
+      "predicate",
+      "status"
+    ]
+  }
+}
