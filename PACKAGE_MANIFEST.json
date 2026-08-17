@@ -1,6 +1,6 @@
 {
   "schema": "return-brake-public-package-v1",
-  "generated_at_utc": "2026-08-17T08:52:39.339412Z",
+  "generated_at_utc": "2026-08-17T08:54:41.390558Z",
   "scope": "All public package files except this manifest, Git metadata, and transient caches.",
   "file_count": 55,
   "files": {
@@ -25,8 +25,8 @@
       "sha256": "1ccd4f2c33becace181b18953522a83e2db5479d6232f801c9ff45b5dbc20f4b"
     },
     "OPPORTUNITY_TRIAGE_2026-08-17.md": {
-      "bytes": 1624,
-      "sha256": "4087ac480c18661752cec3e40c78572ce18d01736e997dace6da21c5fabbfe5c"
+      "bytes": 1827,
+      "sha256": "41b298e7142f1b9ef0b00e6143817e54e8a5186cf4093283c85c93c9d78f98da"
     },
     "PUBLIC_RELEASE_CHECKLIST_2026-08-17.md": {
       "bytes": 2513,
@@ -225,5 +225,5 @@
       "sha256": "e4e1e6d253aa56e7004333639390c5c4993a4fb38e8193b0a749fdf43ff0bd1c"
     }
   },
-  "manifest_payload_sha256": "64ab56fd810e4278238e30ca06a384b4a78c6c4635a6bcf8a7c8089a881145e1"
+  "manifest_payload_sha256": "632db840488e81763e91727efba665be30d89bbe245a2419a026be37bddc44f5"
 }

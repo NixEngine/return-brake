@@ -10,9 +10,9 @@ The directory description says that submissions should include a benchmark speci
 
 ## Current status
 
-`LEAD_ONLY — NOT VERIFIED AGAINST PRIMARY RULES`
+`PARTIALLY CORROBORATED — SUBMISSION NOT VERIFIED`
 
-The directory page was not treated as sufficient evidence of an open deadline, eligibility, prize terms, judging process, or submission portal. No account was created and no submission was made.
+The directory page was not treated as sufficient evidence of an open deadline, eligibility, prize terms, judging process, or submission portal. The official MLCommons site confirms public benchmark infrastructure and an AI Risk & Reliability working group, but the specific prize announcement and current submission route were not located there. No account was created and no submission was made.
 
 ## Fit assessment
 
@@ -33,4 +33,3 @@ Material gaps before consideration:
 ## Decision
 
 Do not submit yet. The current artifact remains the primary public result. This lead becomes actionable only after primary-rule verification and a separately frozen multi-system protocol.
-
