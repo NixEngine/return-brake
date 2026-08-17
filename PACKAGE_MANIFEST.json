@@ -1,8 +1,8 @@
 {
   "schema": "return-brake-public-package-v1",
-  "generated_at_utc": "2026-08-16T13:03:21.246601Z",
+  "generated_at_utc": "2026-08-17T05:05:58Z",
   "scope": "All public package files except this manifest, Git metadata, and transient caches.",
-  "file_count": 43,
+  "file_count": 66,
   "files": {
     ".gitattributes": {
       "bytes": 64,
@@ -172,10 +172,102 @@
       "bytes": 230709,
       "sha256": "f24f3a91b1af596cd0173c7472e9cfaad0d98fc2014cc45403e1c4c13db0704f"
     },
+    "successor/z_polyspine/.gitignore": {
+      "bytes": 23,
+      "sha256": "6feaded4e28ea86e001a6751b4e3d960e8b7c31b9616ff9936b79297086e809b"
+    },
+    "successor/z_polyspine/CONTRIBUTION_PROTOCOL.json": {
+      "bytes": 6331,
+      "sha256": "f9b795c68345182f025b052240aeac22aab4479aee25370564338390488a992d"
+    },
+    "successor/z_polyspine/P0_SNAPSHOT.json": {
+      "bytes": 2036,
+      "sha256": "b547b32c1acf3a38017e417aa38eab3ade3b4c1570fb67c916fb765bb0bbb66b"
+    },
+    "successor/z_polyspine/PHASE_CONTRACT.json": {
+      "bytes": 2713,
+      "sha256": "2d0931fb707721fea5cb7d9c3b56d0215d2328a1d1eba5afc0e4b51512c2b53c"
+    },
+    "successor/z_polyspine/PREREGISTRATION.json": {
+      "bytes": 3454,
+      "sha256": "08c5405cf974511f164322d694cdc01f01863c9737872b0bc54130dbf1454532"
+    },
+    "successor/z_polyspine/README.md": {
+      "bytes": 4106,
+      "sha256": "b9a1749132ccdc86ec90cd06c8fbf180e9efeece9cbf185415938505bba4430c"
+    },
+    "successor/z_polyspine/ROOT_ANCHOR.json": {
+      "bytes": 1771,
+      "sha256": "207fc7f7cf78836775364d56bbde8c6849e571e0ad7773364558eeb89844cda2"
+    },
+    "successor/z_polyspine/evidence/natural_language_coupling_receipt.json": {
+      "bytes": 2543,
+      "sha256": "f0f0d0850f79ed2f224f9c9385e317755112d4f371f23033a248394ab72a56dc"
+    },
+    "successor/z_polyspine/evidence/participant_registry_receipt.json": {
+      "bytes": 1227,
+      "sha256": "a503cbb80d58c0aa090b8e28b31c2781f450fbc7b4d70c9ce31cbd1ccaed3eea"
+    },
+    "successor/z_polyspine/phases/P0/record.json": {
+      "bytes": 3838,
+      "sha256": "1941f1fd9b249882858af725d482682355ce3472b66fc015a32a1b4dc8cd1c53"
+    },
+    "successor/z_polyspine/phases/P1/MANIFEST.json": {
+      "bytes": 249,
+      "sha256": "16b0ac11213958a9d5e58f48d8df3fd863b4419524f6a7bfd4b6b6f9537356ea"
+    },
+    "successor/z_polyspine/phases/P1/record.json": {
+      "bytes": 3836,
+      "sha256": "9f590458bb91b317324e6a3fada6466500f9b0328581835934dc65c9d9e907d2"
+    },
+    "successor/z_polyspine/phases/P2/MANIFEST.json": {
+      "bytes": 249,
+      "sha256": "19c82948a577d60982bd217de12a5b9e849d237d55e91be62aae68032eed1adf"
+    },
+    "successor/z_polyspine/phases/P2/record.json": {
+      "bytes": 4285,
+      "sha256": "c7e498dbee214cd9ad484f2fcc6f3b003577605da12ce272a3d4bd45d4c851ba"
+    },
+    "successor/z_polyspine/phases/P3/MANIFEST.json": {
+      "bytes": 249,
+      "sha256": "69e80ed7581d2bb4b2a9ea8d2833588cc11aecc3139bb54cd338a46f49d20597"
+    },
+    "successor/z_polyspine/phases/P3/record.json": {
+      "bytes": 2951,
+      "sha256": "7eab2cfc6ed35186fa750273c10dea6ae56b731899e1bf1b70e5d8987c5444fe"
+    },
+    "successor/z_polyspine/tests/test_verify.py": {
+      "bytes": 7209,
+      "sha256": "01e348eb1d4e5f8c0b9aaea0146cf64077a2d04cf51a3d325ea97463135aa8dd"
+    },
+    "successor/z_polyspine/vectors/catalog.json": {
+      "bytes": 3071,
+      "sha256": "1ecceefc1391f317611f1894ea34e7233062b2b24f2530eea7cc27d67ffcecb4"
+    },
+    "successor/z_polyspine/verify.py": {
+      "bytes": 63592,
+      "sha256": "a79684443785df0e8194efd71ce57e11712fa8dbe6c669f10f809e519a62c481"
+    },
+    "successor/z_polyspine_contribution_roles_v1/CONTRACT.json": {
+      "bytes": 782,
+      "sha256": "82d7f76f1790aeca7e19b3191b18738ba75cc88e46ecec0b03a7aca3d5f44084"
+    },
+    "successor/z_polyspine_contribution_roles_v1/README.md": {
+      "bytes": 1131,
+      "sha256": "4925664b2b9c07572d1de988543a0b21c04f28b0efaba966cb36ed5db57602ee"
+    },
+    "successor/z_polyspine_contribution_roles_v1/tests/test_verify.py": {
+      "bytes": 4753,
+      "sha256": "59b3cb9b660ec0fdcf0090ab806bdc752e4b50def96c1453cda9b63336d7b2dd"
+    },
+    "successor/z_polyspine_contribution_roles_v1/verify.py": {
+      "bytes": 7950,
+      "sha256": "b2bcddc8c9b05591b40a1337ce0828d68848e6487dccb5dd76643529f5ddebb2"
+    },
     "verify_package_manifest.py": {
       "bytes": 3314,
       "sha256": "e4e1e6d253aa56e7004333639390c5c4993a4fb38e8193b0a749fdf43ff0bd1c"
     }
   },
-  "manifest_payload_sha256": "f4ce3e7983d45d9a75d474a7843574fe136f0639112cfc66260437d191f36f25"
+  "manifest_payload_sha256": "0279656e9d5b21bab2fb33783bc26055d5a6f3e7945e8c7b5e111e017adcf4fb"
 }

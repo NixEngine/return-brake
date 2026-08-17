@@ -1,0 +1,27 @@
+{
+  "schema": "z-polyspine-contribution-role-successor-v1",
+  "parent": {
+    "commit": "183c3507ed6af268140573e6483b1bacb30de373",
+    "phase_id": "P3",
+    "record_path": "successor/z_polyspine/phases/P3/record.json",
+    "record_sha256": "7eab2cfc6ed35186fa750273c10dea6ae56b731899e1bf1b70e5d8987c5444fe"
+  },
+  "basis": {
+    "phase_id": "P2",
+    "finding_id": "p2-f03",
+    "surface": "contribution_role_separation",
+    "disposition": "ADD_SUCCESSOR"
+  },
+  "boundary": {
+    "error_code": "MATERIAL_ROLES_COLLAPSED",
+    "complete_role_family": [
+      "CONCEPTION",
+      "AUTHENTICATION",
+      "COMMAND_DISPATCH",
+      "PROCESS_EXECUTION",
+      "PUBLICATION_INITIATION"
+    ],
+    "minimum_distinct_principals": 2,
+    "other_roles_count_toward_threshold": false
+  }
+}
