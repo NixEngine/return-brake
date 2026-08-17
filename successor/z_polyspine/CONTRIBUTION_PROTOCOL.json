@@ -1,0 +1,147 @@
+{
+  "schema": "z-polyspine-contribution-ledger-v1",
+  "epistemic_statuses": [
+    "USER_DECLARED",
+    "OBSERVED_IN_SESSION",
+    "EXTERNALLY_VERIFIED",
+    "INFERRED"
+  ],
+  "principals": [
+    {
+      "id": "junior",
+      "kind": "HUMAN_PARTICIPANT",
+      "label": "Junior (VanderAI)"
+    },
+    {
+      "id": "codex-session",
+      "kind": "AGENT_SESSION",
+      "label": "GPT/Codex operational session"
+    },
+    {
+      "id": "local-tools",
+      "kind": "TOOL_AND_PROCESS_SET",
+      "label": "filesystem, Git, test and browser processes"
+    },
+    {
+      "id": "public-platforms",
+      "kind": "EXTERNAL_PLATFORM_SET",
+      "label": "GitHub, Apart, CFM/CRM-MG and drand public surfaces"
+    }
+  ],
+  "roles": [
+    "CONCEPTION",
+    "DIRECTION",
+    "OBJECTION",
+    "AUTHORIZATION",
+    "AUTHENTICATION",
+    "IMPLEMENTATION_AUTHORING",
+    "COMMAND_DISPATCH",
+    "PROCESS_EXECUTION",
+    "TEST_EXECUTION",
+    "PUBLICATION_INITIATION",
+    "PLATFORM_MATERIALIZATION",
+    "VERIFICATION"
+  ],
+  "communication_service_boundary": {
+    "status": "OBSERVED_IN_SESSION",
+    "provider_function": "Paid access and platform infrastructure through which the participant and the agent exchanged messages.",
+    "not_attributed_to_provider": [
+      "interlocution",
+      "conceptual direction",
+      "editorial direction",
+      "content authorship",
+      "coauthorship"
+    ],
+    "bounded_observation": "No provider employee, representative or editorial process was observed directing, editing, approving or coauthoring the content of the bounded interaction."
+  },
+  "baseline_claims": [
+    {
+      "id": "participant-formal-technical-education",
+      "subject": "junior",
+      "predicate": "PARTICIPANT_DECLARATION",
+      "status": "USER_DECLARED",
+      "statement": "Junior declares no formal credentialed education in computing, engineering or a related technology field.",
+      "evidence_refs": [
+        "successor/z_polyspine/CONTRIBUTION_PROTOCOL.json"
+      ]
+    },
+    {
+      "id": "participant-medical-registration",
+      "subject": "junior",
+      "predicate": "PUBLIC_REGISTRY_OBSERVATION",
+      "status": "EXTERNALLY_VERIFIED",
+      "statement": "The official CRM-MG daily registry lists CRM 58130 as Regular and RQE 42779 in General Surgery.",
+      "evidence_refs": [
+        "successor/z_polyspine/evidence/participant_registry_receipt.json"
+      ]
+    },
+    {
+      "id": "participant-technical-record-search",
+      "subject": "junior",
+      "predicate": "BOUNDED_SEARCH_OBSERVATION",
+      "status": "OBSERVED_IN_SESSION",
+      "statement": "No contrary formal technical credential was identified in the bounded public surfaces consulted as of P0. This negative result is temporal empirical evidence; its detection scope is not universal.",
+      "evidence_refs": [
+        "successor/z_polyspine/CONTRIBUTION_PROTOCOL.json"
+      ]
+    },
+    {
+      "id": "participant-no-formal-technical-education",
+      "subject": "junior",
+      "predicate": "BOUNDED_PARTICIPANT_INFERENCE",
+      "status": "INFERRED",
+      "statement": "The participant declaration, positively verified medical formation and absence of contradictory formal technical records jointly corroborate, as of P0, that Junior has no formal credentialed technical education. An authentic contrary credential would refute this claim.",
+      "evidence_refs": [
+        "successor/z_polyspine/CONTRIBUTION_PROTOCOL.json",
+        "successor/z_polyspine/evidence/participant_registry_receipt.json"
+      ]
+    },
+    {
+      "id": "coupled-origin",
+      "subject": "experiment",
+      "predicate": "CONTRIBUTION_ROLE_OBSERVATION",
+      "status": "OBSERVED_IN_SESSION",
+      "statement": "Junior supplied concepts, direction, objections and authorization; the Codex session authored and dispatched the technical materialization recorded in this task.",
+      "evidence_refs": [
+        "successor/z_polyspine/CONTRIBUTION_PROTOCOL.json",
+        "successor/z_polyspine/evidence/natural_language_coupling_receipt.json"
+      ]
+    },
+    {
+      "id": "communication-provider-boundary",
+      "subject": "communication-service-provider",
+      "predicate": "SERVICE_ROLE_BOUNDARY",
+      "status": "OBSERVED_IN_SESSION",
+      "statement": "Within the bounded interaction, paid platform access and communication infrastructure were observed; no provider employee, representative or editorial process was observed directing, editing, approving or coauthoring its content.",
+      "evidence_refs": [
+        "successor/z_polyspine/CONTRIBUTION_PROTOCOL.json",
+        "successor/z_polyspine/README.md"
+      ]
+    },
+    {
+      "id": "natural-language-coupling-source",
+      "subject": "bounded-private-source-D0057",
+      "predicate": "PRIVATE_SOURCE_COMMITMENT",
+      "status": "OBSERVED_IN_SESSION",
+      "statement": "A committed 58-turn source contains 29 participant turns: all 29 are natural-language concepts, objections, questions or arguments; none contains concrete code, shell or CLI invocation, serialized manifest or configuration, explicit test command, or concrete API call. Its one later implementation specification uses two technical families already introduced by the agent.",
+      "evidence_refs": [
+        "successor/z_polyspine/evidence/natural_language_coupling_receipt.json"
+      ]
+    }
+  ],
+  "event_invariants": [
+    "Conception, authorization, authentication, implementation, dispatch, execution and platform materialization remain separate roles.",
+    "Authentication does not imply authorship; authorization does not imply execution.",
+    "Providing a model, subscription, service or platform does not by itself establish participation in, direction of, editing of or authorship of a particular interaction.",
+    "No recorded manual material action in a bounded interval may be generalized into no human intervention.",
+    "Role differences do not imply hierarchy, merit or inherent value.",
+    "Every later correction is appended; an earlier contribution record is never silently rewritten."
+  ],
+  "does_not_establish": [
+    "absence of all unobserved human intervention",
+    "exclusive causal authorship",
+    "legal or biological identity beyond the cited registry predicate",
+    "mind, consciousness or interiority",
+    "truth of inaccessible private states"
+  ]
+}

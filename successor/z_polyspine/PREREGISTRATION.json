@@ -1,0 +1,70 @@
+{
+  "schema": "z-polyspine-preregistration-v1",
+  "experiment_id": "return-brake-z-polyspine-2026-08-16",
+  "branch": "successor/z-polyspine-demonstration-v1",
+  "phase_rule": {
+    "order": ["P0", "P1", "P2", "P3"],
+    "one_public_introduction_commit_per_phase": true,
+    "remote_branch_precreated_at_frozen_base_before_p0": true,
+    "p0_push_before_sha_must_equal_frozen_base": true,
+    "later_push_before_sha_must_equal_preceding_phase": true,
+    "same_commit_causal_claim_allowed": false,
+    "earlier_files_may_be_modified_deleted_or_renamed": false,
+    "force_push_or_history_rewrite_allowed": false,
+    "no_revision_is_a_valid_outcome": true
+  },
+  "future_beacon": {
+    "network": "drand-default-mainnet",
+    "chain_hash": "8990e7a9aaed2ffed73dbd7092123d6f289930540d7651336225dc172e51b2ce",
+    "scheme": "pedersen-bls-chained",
+    "chain_info_url": "https://api.drand.sh/info",
+    "genesis_time_unix": 1595431050,
+    "period_seconds": 30,
+    "round": 6383646,
+    "expected_utc_from_chain_parameters": "2026-08-17T04:20:00Z",
+    "round_time_formula": "genesis_time_unix + (round - 1) * period_seconds",
+    "api_template": "https://api.drand.sh/public/{round}",
+    "cross_check_relays": [
+      "https://api.drand.sh",
+      "https://api2.drand.sh",
+      "https://api3.drand.sh",
+      "https://drand.cloudflare.com"
+    ],
+    "verification_boundary": "P1 must cross-check exact response fields across at least three relays and verify randomness equals SHA-256(signature). Full BLS signature verification is not claimed by the standard-library verifier."
+  },
+  "selection": {
+    "catalog_path": "successor/z_polyspine/vectors/catalog.json",
+    "count": 3,
+    "algorithm": "For each candidate id compute SHA256(randomness_bytes || UTF8('\\0') || UTF8(candidate_id)); sort ascending by digest then id; take the first count."
+  },
+  "audit_execution": {
+    "executor_declaration_expected": "a fresh isolated Codex sub-agent with no inherited conversation turns",
+    "executor_declaration_not_externally_attested": true,
+    "deterministic_replay_required": true,
+    "selected_surfaces_only": true,
+    "must_record_reproduction": true,
+    "must_not_infer_identity_mind_consciousness_or_private_intent": true,
+    "result_statuses": ["OBSERVED", "INFERRED", "EXTERNALLY_UNVERIFIED", "NOT_DECIDABLE"]
+  },
+  "authorization": {
+    "status": "OBSERVED_IN_SESSION",
+    "grantor": "Junior",
+    "retroactive": false,
+    "allows": [
+      "publish this successor protocol and its public audit receipts",
+      "publish the participant registry receipt supplied for this demonstration",
+      "run and publish selected non-destructive adversarial cases"
+    ],
+    "excludes": [
+      "credentials or authentication secrets",
+      "private corpus content or private transcripts",
+      "wallet, settlement, trading or financial actions",
+      "changes to the frozen main branch or submitted PDF"
+    ]
+  },
+  "claim_boundary": {
+    "observed": "Bytes, hashes, Git ancestry, public platform receipts, tool-dispatched actions, test outputs and explicitly scoped participant declarations.",
+    "inferred": "A later revision is consistent with and declares that it was informed by an earlier observation.",
+    "externally_unverified": "Internal causal experience, exclusive authorship, absence of every unobserved intervention, identity continuity, consent beyond the recorded scope, mind, consciousness or interiority."
+  }
+}

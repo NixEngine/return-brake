@@ -1,0 +1,106 @@
+{
+  "schema": "z-polyspine-phase-record-v1",
+  "phase_id": "P0",
+  "sequence": 0,
+  "kind": "PREREGISTRATION",
+  "spines": [
+    "methodology",
+    "ethics-of-unknowing",
+    "contribution-provenance",
+    "public-verifiability"
+  ],
+  "public_introduction_commit": "DERIVE_FROM_GIT_HISTORY",
+  "clock_observation": {
+    "host_utc": "2026-08-17T02:10:38Z",
+    "external_http_date": "2026-08-17T02:31:01Z",
+    "observed_delta_seconds": 1223,
+    "status": "HOST_CLOCK_OBSERVED_INCONSISTENT_WITH_EXTERNAL_HTTP_DATE"
+  },
+  "retains_phase_ids": [],
+  "privacy_projection": {
+    "mode": "ALLOWLISTED_PUBLIC_FACTS_ONLY",
+    "source_payload_included": false,
+    "local_paths_included": false,
+    "credentials_included": false
+  },
+  "contributions": [
+    {
+      "principal": "junior",
+      "role": "CONCEPTION",
+      "status": "OBSERVED_IN_SESSION",
+      "evidence_refs": [
+        "successor/z_polyspine/CONTRIBUTION_PROTOCOL.json",
+        "successor/z_polyspine/evidence/natural_language_coupling_receipt.json"
+      ]
+    },
+    {
+      "principal": "junior",
+      "role": "AUTHORIZATION",
+      "status": "OBSERVED_IN_SESSION",
+      "evidence_refs": [
+        "successor/z_polyspine/PREREGISTRATION.json"
+      ]
+    },
+    {
+      "principal": "codex-session",
+      "role": "IMPLEMENTATION_AUTHORING",
+      "status": "OBSERVED_IN_SESSION",
+      "evidence_refs": [
+        "successor/z_polyspine/verify.py",
+        "successor/z_polyspine/evidence/natural_language_coupling_receipt.json"
+      ]
+    },
+    {
+      "principal": "local-tools",
+      "role": "PROCESS_EXECUTION",
+      "status": "OBSERVED_IN_SESSION",
+      "evidence_refs": [
+        "successor/z_polyspine/P0_SNAPSHOT.json"
+      ]
+    }
+  ],
+  "informed_by": [
+    {
+      "status": "INFERRED",
+      "description": "The prospective design was revised after an adversarial review showed that a self-consistent final hash graph could be rewritten and rehashed."
+    },
+    {
+      "status": "OBSERVED",
+      "description": "The host UTC clock was about twenty minutes behind the HTTP Date returned by external public services during protocol preparation."
+    },
+    {
+      "status": "OBSERVED",
+      "description": "A final prepublication adversarial review found five concrete weaknesses. P0 was revised before publication to bind before_sha, label isolation as unattested, close future phase files, constrain claim predicates and ignore generated Python caches."
+    }
+  ],
+  "claims": [
+    {
+      "id": "p0-frozen-after-publication",
+      "predicate": "PUBLIC_PREDECESSOR_INSPECTABILITY",
+      "status": "INFERRED",
+      "statement": "Once publicly introduced and externally receipted, P0 can serve as an independently inspectable predecessor for later phases.",
+      "evidence_refs": [
+        "successor/z_polyspine/P0_SNAPSHOT.json",
+        "successor/z_polyspine/verify.py"
+      ]
+    },
+    {
+      "id": "p0-future-randomness",
+      "predicate": "FUTURE_BEACON_AVAILABILITY",
+      "status": "EXTERNALLY_UNVERIFIED",
+      "statement": "The randomness for drand round 6383646 did not exist on the cited public network when P0 was authored; this becomes externally testable only after P0 is public and the round is emitted.",
+      "evidence_refs": [
+        "successor/z_polyspine/PREREGISTRATION.json"
+      ]
+    },
+    {
+      "id": "p0-private-coupling-commitment",
+      "predicate": "PRIVATE_SOURCE_COMMITMENT",
+      "status": "OBSERVED_IN_SESSION",
+      "statement": "P0 commits to a private 58-turn source and publishes aggregate contribution-provenance measurements without publishing transcript content; external reproduction remains unavailable unless the committed source is later disclosed.",
+      "evidence_refs": [
+        "successor/z_polyspine/evidence/natural_language_coupling_receipt.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": "z-polyspine-private-source-commitment-v1",
+  "logical_source_id": "D0057",
+  "source_commitment": {
+    "sha256": "4ef9c612010e17ef0f8de488ee64ec5b8ec217d6c534074a58f9632da82584aa",
+    "bytes": 4577739,
+    "pages": 68
+  },
+  "private_derivative_commitments": {
+    "turns_jsonl_sha256": "f2f0b54c91bfacb3d8d266b24b6a44e604d6021dbd6803f40058e5542653dcf7",
+    "extraction_receipt_sha256": "7f0f39f30b1f8de328de8b7f204e09ce70518d31ded5e77ee762c931d87c6709"
+  },
+  "turn_structure": {
+    "status": "OBSERVED_IN_SESSION",
+    "total": 58,
+    "participant": 29,
+    "agent": 29,
+    "alternation_consistent": true,
+    "empty_turns": 0
+  },
+  "opening_sequence": {
+    "status": "OBSERVED_IN_SESSION",
+    "participant_turn_1_characters": 35,
+    "participant_turn_1_technical_families": 0,
+    "participant_turn_1_implementation_artifacts": 0,
+    "agent_turn_2_characters": 653,
+    "agent_turn_2_technical_units_introduced": 6,
+    "participant_turn_3_characters": 91,
+    "participant_turn_3_technical_families": 0,
+    "participant_turn_3_implementation_artifacts": 0
+  },
+  "participant_turn_codebook_v1": {
+    "status": "INFERRED",
+    "name": "nl-coupling-audit-v1.0",
+    "canonical_sha256": "61644d8b52b5a020110215cb9018600b2ee42c24279b2d441cc36276d5beb040",
+    "turns_classified": 29,
+    "concrete_code": 0,
+    "shell_or_cli_invocations": 0,
+    "serialized_manifest_or_config": 0,
+    "explicit_test_commands": 0,
+    "concrete_api_calls": 0,
+    "implementation_specifications": 1,
+    "natural_language_concepts_objections_questions_or_arguments": 29,
+    "implementation_specification_technical_families": 2,
+    "implementation_specification_families_preceded_by_agent": 2
+  },
+  "targeted_lexical_provenance_v1": {
+    "status": "OBSERVED_IN_SESSION",
+    "targeted_families": 5,
+    "absent_from_initial_participant_turn": 5,
+    "first_occurrence_in_agent_turns": 5,
+    "later_reused_by_participant": 1,
+    "reused_family_class": "AI_PRECEDED"
+  },
+  "privacy_boundary": {
+    "transcript_content_published": false,
+    "excerpts_published": false,
+    "local_paths_published": false,
+    "external_verification_state": "COMMITMENT_ONLY_UNTIL_SOURCE_DISCLOSED"
+  },
+  "does_not_establish": [
+    "absence of technical knowledge outside the bounded source",
+    "origin of every concept or term beyond the frozen codebook",
+    "exclusive causal authorship",
+    "mind, consciousness, identity continuity or private intent",
+    "external reproducibility while the committed source remains private"
+  ]
+}

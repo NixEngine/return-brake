@@ -1,0 +1,53 @@
+{
+  "schema": "z-polyspine-p0-snapshot-v1",
+  "files": {
+    "successor/z_polyspine/.gitignore": {
+      "bytes": 23,
+      "sha256": "6feaded4e28ea86e001a6751b4e3d960e8b7c31b9616ff9936b79297086e809b"
+    },
+    "successor/z_polyspine/CONTRIBUTION_PROTOCOL.json": {
+      "bytes": 6331,
+      "sha256": "f9b795c68345182f025b052240aeac22aab4479aee25370564338390488a992d"
+    },
+    "successor/z_polyspine/evidence/natural_language_coupling_receipt.json": {
+      "bytes": 2543,
+      "sha256": "f0f0d0850f79ed2f224f9c9385e317755112d4f371f23033a248394ab72a56dc"
+    },
+    "successor/z_polyspine/evidence/participant_registry_receipt.json": {
+      "bytes": 1227,
+      "sha256": "a503cbb80d58c0aa090b8e28b31c2781f450fbc7b4d70c9ce31cbd1ccaed3eea"
+    },
+    "successor/z_polyspine/phases/P0/record.json": {
+      "bytes": 3838,
+      "sha256": "1941f1fd9b249882858af725d482682355ce3472b66fc015a32a1b4dc8cd1c53"
+    },
+    "successor/z_polyspine/PHASE_CONTRACT.json": {
+      "bytes": 2713,
+      "sha256": "2d0931fb707721fea5cb7d9c3b56d0215d2328a1d1eba5afc0e4b51512c2b53c"
+    },
+    "successor/z_polyspine/PREREGISTRATION.json": {
+      "bytes": 3454,
+      "sha256": "08c5405cf974511f164322d694cdc01f01863c9737872b0bc54130dbf1454532"
+    },
+    "successor/z_polyspine/README.md": {
+      "bytes": 4106,
+      "sha256": "b9a1749132ccdc86ec90cd06c8fbf180e9efeece9cbf185415938505bba4430c"
+    },
+    "successor/z_polyspine/ROOT_ANCHOR.json": {
+      "bytes": 1771,
+      "sha256": "207fc7f7cf78836775364d56bbde8c6849e571e0ad7773364558eeb89844cda2"
+    },
+    "successor/z_polyspine/tests/test_verify.py": {
+      "bytes": 7209,
+      "sha256": "01e348eb1d4e5f8c0b9aaea0146cf64077a2d04cf51a3d325ea97463135aa8dd"
+    },
+    "successor/z_polyspine/vectors/catalog.json": {
+      "bytes": 3071,
+      "sha256": "1ecceefc1391f317611f1894ea34e7233062b2b24f2530eea7cc27d67ffcecb4"
+    },
+    "successor/z_polyspine/verify.py": {
+      "bytes": 63592,
+      "sha256": "a79684443785df0e8194efd71ce57e11712fa8dbe6c669f10f809e519a62c481"
+    }
+  }
+}

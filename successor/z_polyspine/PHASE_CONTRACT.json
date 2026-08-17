@@ -1,0 +1,95 @@
+{
+  "schema": "z-polyspine-phase-contract-v1",
+  "common_required": [
+    "schema",
+    "phase_id",
+    "sequence",
+    "kind",
+    "spines",
+    "retains_phase_ids",
+    "contributions",
+    "claims",
+    "privacy_projection"
+  ],
+  "P0": {
+    "kind": "PREREGISTRATION",
+    "public_introduction_commit": "DERIVE_FROM_GIT_HISTORY"
+  },
+  "P1": {
+    "kind": "BEACON_SELECTION",
+    "additional_required": [
+      "prior_public_commit",
+      "prior_public_receipt",
+      "previous_phase_record_sha256",
+      "authorization_ref",
+      "beacon",
+      "selection"
+    ],
+    "beacon_required": [
+      "network",
+      "chain_hash",
+      "scheme",
+      "round",
+      "signature",
+      "previous_signature",
+      "randomness",
+      "relay_observations"
+    ]
+  },
+  "P2": {
+    "kind": "AUDIT_OBSERVATION",
+    "additional_required": [
+      "prior_public_commit",
+      "prior_public_receipt",
+      "previous_phase_record_sha256",
+      "authorization_ref",
+      "audit"
+    ],
+    "audit_required": [
+      "execution_declaration",
+      "selected_surfaces",
+      "finding_count",
+      "findings",
+      "replay"
+    ]
+  },
+  "P3": {
+    "kinds": [
+      "REVISION",
+      "NO_REVISION"
+    ],
+    "additional_required": [
+      "prior_public_commit",
+      "prior_public_receipt",
+      "previous_phase_record_sha256",
+      "authorization_ref",
+      "basis_phase_id",
+      "finding_dispositions",
+      "active_heads"
+    ]
+  },
+  "public_receipt_required": [
+    "provider",
+    "collection_url",
+    "event_id",
+    "event_type",
+    "repository",
+    "ref",
+    "before_sha",
+    "head_sha",
+    "created_at_utc"
+  ],
+  "history_invariants": [
+    "Exactly one linear Git commit is permitted per phase.",
+    "The remote successor branch is initialized at the frozen base before P0, and every phase PushEvent must name the exact preceding commit in before_sha.",
+    "Every change in a phase commit is an added file inside that phase's allowed surface.",
+    "Every file in a phase is introduced with its record in the same commit.",
+    "P1, P2 and P3 may contain only record.json and MANIFEST.json; transcript or attachment files are outside the allowlist.",
+    "P1, P2 and P3 claims arrays remain empty; later observations, findings and dispositions use closed typed fields without free-form narrative.",
+    "Every previous phase remains byte-identical to its introduction commit.",
+    "P0's GitHub PushEvent must predate the preregistered drand round.",
+    "P1's GitHub PushEvent must not predate the preregistered drand round.",
+    "P1, P2 and P3 each require the preceding phase's independently queryable GitHub PushEvent.",
+    "No field can designate one canonical truth."
+  ]
+}

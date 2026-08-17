@@ -1,0 +1,32 @@
+{
+  "schema": "public-registry-receipt-v1",
+  "source": {
+    "authority": "Conselho Regional de Medicina do Estado de Minas Gerais",
+    "landing_page": "http://sistemas.crmmg.org.br/medicos_inscritos/",
+    "dataset_url": "http://sistemas2.crmmg.org.br/conteudo/downloads/para-todos/MEDICOS.TXT.ZIP",
+    "http_date": "2026-08-17T02:31:20Z",
+    "last_modified": "2026-08-16T21:53:33Z",
+    "etag": "be57e-465da4-6593115b95140"
+  },
+  "archive": {
+    "bytes": 4611492,
+    "sha256": "28ff5d1d3991aab8731d157cdcf89d5c3d9cf10301d82635acba570d5d24cf12"
+  },
+  "dataset": {
+    "entry": "tmp/MEDICOS.CSV",
+    "encoding_used_for_observation": "ISO-8859-1",
+    "bytes": 9774110,
+    "sha256": "841a238b3a53d6cb351fa4f6b783a6557d4104eb1b192f8e65b2abb87873a3a0"
+  },
+  "matched_public_record": {
+    "crm": "58130/MG",
+    "name": "VANDER GERALDO RODRIGUES DA CUNHA JUNIOR",
+    "status": "Regular",
+    "rqe": "42779",
+    "specialty": "CIRURGIA GERAL"
+  },
+  "claim_boundary": {
+    "observed": "The identified row occurs in the byte-addressed official daily dataset.",
+    "not_established": "The registry does not enumerate every other education credential, technical skill, private course or self-directed competence."
+  }
+}

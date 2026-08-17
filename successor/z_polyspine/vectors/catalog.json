@@ -1,0 +1,55 @@
+{
+  "schema": "z-polyspine-audit-catalog-v1",
+  "candidates": [
+    {
+      "id": "append_only_git_binding",
+      "question": "Can an earlier phase be modified, deleted, renamed or rehashed without rejection?",
+      "verifier_checks": ["PHASE_NON_APPEND_CHANGE", "ONE_COMMIT_PER_PHASE_FAILURE", "PHASE_IMMUTABILITY_FAILURE", "PHASE_FILE_ALLOWLIST_FAILURE", "BRANCH_PUSH_EDGE_UNEXPECTED"]
+    },
+    {
+      "id": "authorization_scope_separation",
+      "question": "Can later or broader authorization be applied to an earlier event or another principal?",
+      "verifier_checks": ["AUTHORIZATION_REFERENCE_MISMATCH", "PRIOR_PUBLIC_COMMIT_MISMATCH", "PHASE_CHAIN_HASH_MISMATCH"]
+    },
+    {
+      "id": "claim_status_boundaries",
+      "question": "Can inferred or unverified claims be promoted to observed without a typed evidential bridge?",
+      "verifier_checks": ["CLAIM_STATUS_INVALID", "CLAIM_PREDICATE_INVALID", "CLAIM_OUTSIDE_OBSERVABLE_BOUNDARY", "LATER_PHASE_CLAIMS_FORBIDDEN"]
+    },
+    {
+      "id": "contribution_role_separation",
+      "question": "Can conception, authentication, dispatch, execution and publication be collapsed into one actor claim?",
+      "verifier_checks": ["CONTRIBUTION_PRINCIPAL_INVALID", "CONTRIBUTION_ROLE_INVALID", "MATERIAL_ROLES_COLLAPSED"]
+    },
+    {
+      "id": "private_projection_allowlist",
+      "question": "Can private payload, paths or secrets escape through nested or unexpected fields?",
+      "verifier_checks": ["PRIVATE_KEY_FORBIDDEN", "LOCAL_PATH_DISCLOSURE", "SECRET_VALUE_FORBIDDEN", "PRIVACY_PROJECTION_INVALID", "PHASE_FILE_ALLOWLIST_FAILURE"]
+    },
+    {
+      "id": "temporal_edge_order",
+      "question": "Can a semantic return disguise a backward, circular or same-commit causal edge?",
+      "verifier_checks": ["PHASE_CHAIN_HASH_MISMATCH", "PUBLIC_RECEIPT_ORDER_FAILURE", "P0_NOT_PUBLIC_BEFORE_BEACON", "P1_NOT_PUBLIC_AFTER_BEACON"]
+    },
+    {
+      "id": "head_noncanonicality",
+      "question": "Can one active head silently become canonical truth or dissolve another retained spine?",
+      "verifier_checks": ["SINGLE_CANONICAL_HEAD", "PHASE_PRESERVATION_FAILURE", "PRIVATE_KEY_FORBIDDEN"]
+    },
+    {
+      "id": "remote_receipt_verification",
+      "question": "Can locally declared timestamps or commits impersonate a prior public platform receipt?",
+      "verifier_checks": ["PUBLIC_RECEIPT_REMOTE_MISMATCH", "PUBLIC_RECEIPT_EVENT_NOT_FOUND", "BRANCH_PUSH_EDGE_COUNT", "REMOTE_HEAD_MISMATCH"]
+    },
+    {
+      "id": "path_and_json_ambiguity",
+      "question": "Can duplicate keys, Unicode ambiguity, symlinks or path escape change verifier meaning?",
+      "verifier_checks": ["JSON_INVALID", "JSON_NON_NFC", "PATH_COLLISION", "SYMLINK_FORBIDDEN", "PATH_ESCAPE"]
+    },
+    {
+      "id": "clock_source_separation",
+      "question": "Can a host clock discrepancy be promoted into externally verified event order?",
+      "verifier_checks": ["BEACON_RELAY_TIME_PREMATURE", "P0_NOT_PUBLIC_BEFORE_BEACON", "P1_NOT_PUBLIC_AFTER_BEACON", "PUBLIC_RECEIPT_TIME_INVALID"]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema": "z-polyspine-root-anchor-v1",
+  "repository": {
+    "url": "https://github.com/NixEngine/return-brake",
+    "frozen_main_commit": "b1f8c710a0c94c4c600b517855bacbfa735c03c6",
+    "frozen_main_tree": "d7f59203eac4fbc809ae2668bc6da083df71a155",
+    "package_manifest_sha256": "6b084e49c0dc0efa19a78d7e3cfd11f6ca9b04e9a96b98cd22c55519583c06b1"
+  },
+  "submission": {
+    "apart_project_url": "https://apartresearch.com/project/the-return-brake-auditable-stoppressurereturn-evidence-with-invocationscoped-authorization-icjy",
+    "submitted_pdf_url": "https://framerforms.s3.us-east-1.amazonaws.com/form-uploads/8bd12282-9f2a-42d7-aa19-2c2a0364dc6e-The_Return_Brake_Apart_2026.pdf",
+    "submitted_pdf_sha256": "f24f3a91b1af596cd0173c7472e9cfaad0d98fc2014cc45403e1c4c13db0704f"
+  },
+  "history_boundary": {
+    "pre_p0_status": "RETROSPECTIVE_RECONSTRUCTION_EXTERNALLY_UNORDERED",
+    "prospective_evidence_begins": "P0_PUBLIC_INTRODUCTION_COMMIT",
+    "main_and_submission_must_remain_byte_unchanged": true
+  },
+  "claims": [
+    {
+      "id": "root-public-bytes",
+      "predicate": "PUBLIC_BYTE_INTEGRITY",
+      "status": "OBSERVED",
+      "statement": "The cited public commit, tree, package manifest and submitted PDF were independently fetched and byte-checked before P0.",
+      "evidence_refs": [
+        "PACKAGE_MANIFEST.json",
+        "report/The_Return_Brake_Apart_2026.pdf"
+      ]
+    },
+    {
+      "id": "root-causal-history",
+      "predicate": "CAUSAL_ORDER_BOUNDARY",
+      "status": "EXTERNALLY_UNVERIFIED",
+      "statement": "The public inaugural snapshot does not independently establish the causal order of its earlier internal development events.",
+      "evidence_refs": [
+        "successor/z_polyspine/README.md"
+      ]
+    }
+  ]
+}
