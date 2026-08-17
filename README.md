@@ -128,6 +128,7 @@ For readers evaluating the method rather than only the headline result:
 - [`drafts/lesswrong_open_thread_draft_2026-08-17.md`](drafts/lesswrong_open_thread_draft_2026-08-17.md) — short public discussion draft; and
 - [`PUBLIC_RELEASE_CHECKLIST_2026-08-17.md`](PUBLIC_RELEASE_CHECKLIST_2026-08-17.md) — release gate for future external publication; and
 - [`SUBMISSION_PACKET_2026-08-17.md`](SUBMISSION_PACKET_2026-08-17.md) — short public message and submission ledger; and
+- [`OPPORTUNITY_TRIAGE_2026-08-17.md`](OPPORTUNITY_TRIAGE_2026-08-17.md) — unverified lead for a possible benchmark-prize route; and
 - [`PACKAGE_MANIFEST.json`](PACKAGE_MANIFEST.json) — current package integrity manifest.
 
 The `drafts/` files are working documents and are not part of the frozen experimental root. They may evolve without changing the hashes or interpretation of the original and informed runs.

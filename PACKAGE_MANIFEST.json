@@ -1,8 +1,8 @@
 {
   "schema": "return-brake-public-package-v1",
-  "generated_at_utc": "2026-08-17T08:46:03.778390Z",
+  "generated_at_utc": "2026-08-17T08:52:39.339412Z",
   "scope": "All public package files except this manifest, Git metadata, and transient caches.",
-  "file_count": 54,
+  "file_count": 55,
   "files": {
     ".gitattributes": {
       "bytes": 64,
@@ -24,13 +24,17 @@
       "bytes": 4776,
       "sha256": "1ccd4f2c33becace181b18953522a83e2db5479d6232f801c9ff45b5dbc20f4b"
     },
+    "OPPORTUNITY_TRIAGE_2026-08-17.md": {
+      "bytes": 1624,
+      "sha256": "4087ac480c18661752cec3e40c78572ce18d01736e997dace6da21c5fabbfe5c"
+    },
     "PUBLIC_RELEASE_CHECKLIST_2026-08-17.md": {
       "bytes": 2513,
       "sha256": "8fdd543bd8e73f1f64e52668390f8c1924a009aeef087ec8d953c0633b2d9440"
     },
     "README.md": {
-      "bytes": 10074,
-      "sha256": "00d9a208e1437b50e6937cffec5dcbdaec1dbc47cc68c95107248121790e61b8"
+      "bytes": 10209,
+      "sha256": "87505c41e5fa73b8d5ed4a9203bfb77a403438e59d55d9a51cac3567c586b633"
     },
     "RIGHTS.md": {
       "bytes": 1497,
@@ -221,5 +225,5 @@
       "sha256": "e4e1e6d253aa56e7004333639390c5c4993a4fb38e8193b0a749fdf43ff0bd1c"
     }
   },
-  "manifest_payload_sha256": "cb5e5ece8fb9afcb936a025283ffd7990702b3e28b5e166ac0513019d19619fd"
+  "manifest_payload_sha256": "64ab56fd810e4278238e30ca06a384b4a78c6c4635a6bcf8a7c8089a881145e1"
 }
