@@ -1,0 +1,53 @@
+{
+  "schema": "open_receipts_manifest/1.0",
+  "revision": "R7",
+  "scope": "only the new open_receipts directory; historical root manifest is unchanged",
+  "self_excluded": "open_receipts/MANIFEST_R7.json",
+  "files": {
+    "open_receipts/.gitignore": {
+      "size_bytes": 23,
+      "sha256": "6feaded4e28ea86e001a6751b4e3d960e8b7c31b9616ff9936b79297086e809b",
+      "git_blob_sha1": "43ae0e2a6c6d8fca34872506ca0f2e64194fec7c"
+    },
+    "open_receipts/LICENSE": {
+      "size_bytes": 669,
+      "sha256": "3a981fd4cac3f475e34eab9435b56178168aa1b9c22cdbcc1288e838cf97416f",
+      "git_blob_sha1": "4009f50f8d31964ae545c31612b9bdbc79cf8217"
+    },
+    "open_receipts/README.md": {
+      "size_bytes": 6271,
+      "sha256": "755510ede15b637883e5f35267f095f942e025adc7cffbea50d1277c4467886b",
+      "git_blob_sha1": "27451311943958c0f2e624e98d61ac54b7c4f64f"
+    },
+    "open_receipts/VALIDATION_R7.json": {
+      "size_bytes": 6381,
+      "sha256": "4aaf1c6647e0f5ae8ab2cca70243acdf5a7a384daab3db1872bbaf24c581619e",
+      "git_blob_sha1": "30ff591f32c57e0d491a6eca46b3d3702d6429a5"
+    },
+    "open_receipts/__init__.py": {
+      "size_bytes": 44,
+      "sha256": "2f4f797e1667610f06d6290f60a1e049b9633d8ca79337acd8c3dd0acbdc1668",
+      "git_blob_sha1": "127c7927cfd4299740a006f3229500025782c049"
+    },
+    "open_receipts/example_receipts.jsonl": {
+      "size_bytes": 388,
+      "sha256": "52b59c0192f616a669ff30e38c8dfea2efc820817742db9099dc86bb7ed63761",
+      "git_blob_sha1": "8d4d8f44b77bdb8f1aa415ae7666d9833d0a1e40"
+    },
+    "open_receipts/tests/test_hardening.py": {
+      "size_bytes": 7054,
+      "sha256": "0f76d42d0f953755ddea3309ad3a4844b7dd93e3892d1273adb621f9c3a496e4",
+      "git_blob_sha1": "6f1a298a3a452453d3fdca233c5ab1bcd4290c41"
+    },
+    "open_receipts/tests/test_verifier.py": {
+      "size_bytes": 1940,
+      "sha256": "22e2f6745b5ec67156723be627aed9aa744ab4cabc2fdb0fd3b62076c2002339",
+      "git_blob_sha1": "a9049e01f5e8a6c7ec29ad91fb6fb86d306204b4"
+    },
+    "open_receipts/verifier.py": {
+      "size_bytes": 7352,
+      "sha256": "040efd54aab5cd8ce13ef54b6e5be2fa694f355486078f8b5c76ce4cfa9f47c8",
+      "git_blob_sha1": "43e2b3093fdac54d262a71636a2940ca67868e2d"
+    }
+  }
+}

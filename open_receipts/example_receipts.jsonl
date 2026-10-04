@@ -1,0 +1,2 @@
+{"seq":0,"prev_sha256":null,"event":"model_loaded","model":"example/model","runtime":"local","sha256":"6f18c7c5f497f4a2376e44dd4c5cc033fe7f3eddad0f77d00f31567a8b9c8560"}
+{"seq":1,"prev_sha256":"6f18c7c5f497f4a2376e44dd4c5cc033fe7f3eddad0f77d00f31567a8b9c8560","event":"evaluation_completed","status":"observed","sha256":"664937d92f993db1025c2f9223b7bf5dc6ff653a4af36f359f3928471ae75912"}
