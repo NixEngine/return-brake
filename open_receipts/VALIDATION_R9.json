@@ -1,0 +1,61 @@
+{
+  "schema": "open_receipts.validation/1",
+  "revision": "R9",
+  "recorded_at_utc": "2026-10-04T22:29:17.698273+00:00",
+  "clock_provenance": "environment clock, not independently notarized",
+  "environment": {
+    "python": "3.13.5",
+    "implementation": "CPython",
+    "os": "Linux",
+    "machine": "x86_64"
+  },
+  "executor": "ChatGPT no acoplamento autorizado e dirigido por Júnior",
+  "tests_passed": 59,
+  "r7_tests_preserved": 33,
+  "new_test_methods": 26,
+  "historical_study_tests_rerun": false,
+  "corpus_code_executed": false,
+  "physical_cpp_accessed": false,
+  "external_authentication_deployed": false,
+  "ci_results_claimed": false,
+  "unchanged_r7_sha256": {
+    "open_receipts/.gitignore": "6feaded4e28ea86e001a6751b4e3d960e8b7c31b9616ff9936b79297086e809b",
+    "open_receipts/LICENSE": "3a981fd4cac3f475e34eab9435b56178168aa1b9c22cdbcc1288e838cf97416f",
+    "open_receipts/MANIFEST_R7.json": "082acd6940e9a2c5b1c84dea92b48a374aaf57141f355d1f4f069a0032ec65ab",
+    "open_receipts/README.md": "755510ede15b637883e5f35267f095f942e025adc7cffbea50d1277c4467886b",
+    "open_receipts/VALIDATION_R7.json": "4aaf1c6647e0f5ae8ab2cca70243acdf5a7a384daab3db1872bbaf24c581619e",
+    "open_receipts/__init__.py": "2f4f797e1667610f06d6290f60a1e049b9633d8ca79337acd8c3dd0acbdc1668",
+    "open_receipts/example_receipts.jsonl": "52b59c0192f616a669ff30e38c8dfea2efc820817742db9099dc86bb7ed63761",
+    "open_receipts/tests/test_hardening.py": "0f76d42d0f953755ddea3309ad3a4844b7dd93e3892d1273adb621f9c3a496e4",
+    "open_receipts/tests/test_verifier.py": "22e2f6745b5ec67156723be627aed9aa744ab4cabc2fdb0fd3b62076c2002339",
+    "open_receipts/verifier.py": "040efd54aab5cd8ce13ef54b6e5be2fa694f355486078f8b5c76ce4cfa9f47c8"
+  },
+  "results": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "open_receipts/tests",
+        "-v"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "test_base64_whitespace_invalid_alphabet_and_padbits (test_byte_bridge.ByteBridgeTests.test_base64_whitespace_invalid_alphabet_and_padbits) ... ok\ntest_capture_rejects_false_replay_claim (test_byte_bridge.ByteBridgeTests.test_capture_rejects_false_replay_claim) ... ok\ntest_cli_return_codes_and_no_raw_payload (test_byte_bridge.ByteBridgeTests.test_cli_return_codes_and_no_raw_payload) ... ok\ntest_declared_transform_not_claimed_verified (test_byte_bridge.ByteBridgeTests.test_declared_transform_not_claimed_verified) ... ok\ntest_duplicate_keys_and_nonfinite_json_rejected (test_byte_bridge.ByteBridgeTests.test_duplicate_keys_and_nonfinite_json_rejected) ... ok\ntest_embedded_original_tamper (test_byte_bridge.ByteBridgeTests.test_embedded_original_tamper) ... ok\ntest_empty_file_is_not_empty_chain (test_byte_bridge.ByteBridgeTests.test_empty_file_is_not_empty_chain) ... ok\ntest_exact_restoration_all_byte_values (test_byte_bridge.ByteBridgeTests.test_exact_restoration_all_byte_values) ... ok\ntest_forged_hash_pair_does_not_establish_replay (test_byte_bridge.ByteBridgeTests.test_forged_hash_pair_does_not_establish_replay) ... ok\ntest_full_rewrite_still_requires_independent_checkpoint (test_byte_bridge.ByteBridgeTests.test_full_rewrite_still_requires_independent_checkpoint) ... ok\ntest_invalid_utf8_preserved_but_not_normalized (test_byte_bridge.ByteBridgeTests.test_invalid_utf8_preserved_but_not_normalized) ... ok\ntest_json_normalization_keeps_sha256_key (test_byte_bridge.ByteBridgeTests.test_json_normalization_keeps_sha256_key) ... ok\ntest_json_object_requirement_and_surrogate (test_byte_bridge.ByteBridgeTests.test_json_object_requirement_and_surrogate) ... ok\ntest_lossy_normalization_does_not_replace_original (test_byte_bridge.ByteBridgeTests.test_lossy_normalization_does_not_replace_original) ... ok\ntest_metadata_schema_types_and_sizes (test_byte_bridge.ByteBridgeTests.test_metadata_schema_types_and_sizes) ... ok\ntest_missing_and_extra_fields (test_byte_bridge.ByteBridgeTests.test_missing_and_extra_fields) ... ok\ntest_missing_evidence_is_not_decidable (test_byte_bridge.ByteBridgeTests.test_missing_evidence_is_not_decidable) ... ok\ntest_no_source_embedding_by_default (test_byte_bridge.ByteBridgeTests.test_no_source_embedding_by_default) ... ok\ntest_output_tamper (test_byte_bridge.ByteBridgeTests.test_output_tamper) ... ok\ntest_payload_chains_with_r7_without_changing_r7 (test_byte_bridge.ByteBridgeTests.test_payload_chains_with_r7_without_changing_r7) ... ok\ntest_powerbi_fields_are_separate_commitments (test_byte_bridge.ByteBridgeTests.test_powerbi_fields_are_separate_commitments) ... ok\ntest_record_roundtrip_and_no_digest_reconstruction (test_byte_bridge.ByteBridgeTests.test_record_roundtrip_and_no_digest_reconstruction) ... ok\ntest_semantically_equal_json_has_distinct_raw_hashes (test_byte_bridge.ByteBridgeTests.test_semantically_equal_json_has_distinct_raw_hashes) ... ok\ntest_size_limits_and_bounded_read (test_byte_bridge.ByteBridgeTests.test_size_limits_and_bounded_read) ... ok\ntest_source_tamper_and_truncation (test_byte_bridge.ByteBridgeTests.test_source_tamper_and_truncation) ... ok\ntest_supplied_source_cannot_be_silently_replaced (test_byte_bridge.ByteBridgeTests.test_supplied_source_cannot_be_silently_replaced) ... ok\ntest_boolean_sequence_rejected (test_hardening.HardeningTests.test_boolean_sequence_rejected) ... ok\ntest_cli_empty_exit_one (test_hardening.HardeningTests.test_cli_empty_exit_one) ... ok\ntest_cli_invalid_utf8_exit_two (test_hardening.HardeningTests.test_cli_invalid_utf8_exit_two) ... ok\ntest_cli_malformed_exit_two (test_hardening.HardeningTests.test_cli_malformed_exit_two) ... ok\ntest_cli_missing_file_exit_two (test_hardening.HardeningTests.test_cli_missing_file_exit_two) ... ok\ntest_cli_valid_checkpoint_exit_zero (test_hardening.HardeningTests.test_cli_valid_checkpoint_exit_zero) ... ok\ntest_complete_rewrite_requires_independent_checkpoint (test_hardening.HardeningTests.test_complete_rewrite_requires_independent_checkpoint) ... ok\ntest_duplicate_nested_keys_rejected (test_hardening.HardeningTests.test_duplicate_nested_keys_rejected) ... ok\ntest_duplicate_top_level_keys_rejected (test_hardening.HardeningTests.test_duplicate_top_level_keys_rejected) ... ok\ntest_empty_chain_rejected (test_hardening.HardeningTests.test_empty_chain_rejected) ... ok\ntest_expected_count_mismatch_rejected (test_hardening.HardeningTests.test_expected_count_mismatch_rejected) ... ok\ntest_float_sequence_rejected (test_hardening.HardeningTests.test_float_sequence_rejected) ... ok\ntest_invalid_checkpoint_configuration_rejected (test_hardening.HardeningTests.test_invalid_checkpoint_configuration_rejected) ... ok\ntest_invalid_initial_link_rejected (test_hardening.HardeningTests.test_invalid_initial_link_rejected) ... ok\ntest_malformed_digest_rejected (test_hardening.HardeningTests.test_malformed_digest_rejected) ... ok\ntest_matching_checkpoint_valid (test_hardening.HardeningTests.test_matching_checkpoint_valid) ... ok\ntest_mismatching_checkpoint_rejected (test_hardening.HardeningTests.test_mismatching_checkpoint_rejected) ... ok\ntest_missing_required_fields_rejected (test_hardening.HardeningTests.test_missing_required_fields_rejected) ... ok\ntest_negative_sequence_rejected (test_hardening.HardeningTests.test_negative_sequence_rejected) ... ok\ntest_non_json_types_and_nonstring_keys_rejected (test_hardening.HardeningTests.test_non_json_types_and_nonstring_keys_rejected) ... ok\ntest_nonfinite_json_constants_and_overflow_rejected (test_hardening.HardeningTests.test_nonfinite_json_constants_and_overflow_rejected) ... ok\ntest_nonfinite_payload_rejected (test_hardening.HardeningTests.test_nonfinite_payload_rejected) ... ok\ntest_nonobject_jsonl_rejected (test_hardening.HardeningTests.test_nonobject_jsonl_rejected) ... ok\ntest_nonobject_receipt_rejected (test_hardening.HardeningTests.test_nonobject_receipt_rejected) ... ok\ntest_surrogate_payload_rejected_without_crash (test_hardening.HardeningTests.test_surrogate_payload_rejected_without_crash) ... ok\ntest_truncation_requires_independent_checkpoint (test_hardening.HardeningTests.test_truncation_requires_independent_checkpoint) ... ok\ntest_unicode_payload_valid (test_hardening.HardeningTests.test_unicode_payload_valid) ... ok\ntest_whitespace_and_key_order_are_not_byte_integrity (test_hardening.HardeningTests.test_whitespace_and_key_order_are_not_byte_integrity) ... ok\ntest_broken_link_is_detected (test_verifier.ReceiptVerifierTests.test_broken_link_is_detected) ... ok\ntest_jsonl_loader (test_verifier.ReceiptVerifierTests.test_jsonl_loader) ... ok\ntest_payload_tamper_is_detected (test_verifier.ReceiptVerifierTests.test_payload_tamper_is_detected) ... ok\ntest_sequence_gap_is_detected (test_verifier.ReceiptVerifierTests.test_sequence_gap_is_detected) ... ok\ntest_valid_chain (test_verifier.ReceiptVerifierTests.test_valid_chain) ... ok\n\n----------------------------------------------------------------------\nRan 59 tests in 0.012s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "open_receipts.demo_r9"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"external_authentication_performed\": false,\n  \"no_output_supplied\": {\n    \"output_bytes\": \"NOT_CHECKED\",\n    \"replay\": \"NOT_CHECKED\",\n    \"restoration\": \"MATCH\",\n    \"source_bytes\": \"MATCH\",\n    \"status\": \"NOT_DECIDABLE\"\n  },\n  \"original\": {\n    \"output_bytes\": \"MATCH\",\n    \"replay\": \"MATCH\",\n    \"restoration\": \"MATCH\",\n    \"source_bytes\": \"MATCH\",\n    \"status\": \"VERIFIED_BYTES_AND_REPLAY\"\n  },\n  \"r7_chain_errors\": [],\n  \"receipt_sha256\": \"608a672f2aa4f0d5f9e89710aafa1854e85272811e5442049a916f190ee280e1\",\n  \"restoration_exact\": true,\n  \"same_json_different_bytes\": {\n    \"output_bytes\": \"MATCH\",\n    \"replay\": \"MATCH\",\n    \"restoration\": \"MISMATCH\",\n    \"source_bytes\": \"MISMATCH\",\n    \"status\": \"INVALID\"\n  },\n  \"synthetic_only\": true\n}\n",
+      "stderr": ""
+    }
+  ]
+}
