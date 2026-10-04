@@ -1,0 +1,85 @@
+{
+  "schema": "open_receipts_validation/1.0",
+  "revision": "R7",
+  "recorded_at_utc": "2026-10-04T21:19:20.454681+00:00",
+  "clock_provenance": "environment wall clock; not externally notarized",
+  "environment": {
+    "implementation": "CPython",
+    "python": "3.13.5",
+    "os": "Linux",
+    "machine": "x86_64"
+  },
+  "executor": "ChatGPT under authorization and direction of Júnior",
+  "historical_return_brake_tests_rerun": false,
+  "physical_cpp_accessed": false,
+  "remote_ci_run_claimed": false,
+  "baseline_r6_tests_reproduced": 5,
+  "r7_unittest_methods_passed": 33,
+  "r7_unittest_methods_added": 28,
+  "source_r6_zip_sha256": "24c44e0b8201b4d2e93014629cfa219985bb0f7ce619872611e7208dd6651801",
+  "code_sha256": {
+    "open_receipts/verifier.py": "040efd54aab5cd8ce13ef54b6e5be2fa694f355486078f8b5c76ce4cfa9f47c8",
+    "open_receipts/__init__.py": "2f4f797e1667610f06d6290f60a1e049b9633d8ca79337acd8c3dd0acbdc1668",
+    "open_receipts/tests/test_verifier.py": "22e2f6745b5ec67156723be627aed9aa744ab4cabc2fdb0fd3b62076c2002339",
+    "open_receipts/tests/test_hardening.py": "0f76d42d0f953755ddea3309ad3a4844b7dd93e3892d1273adb621f9c3a496e4",
+    "open_receipts/example_receipts.jsonl": "52b59c0192f616a669ff30e38c8dfea2efc820817742db9099dc86bb7ed63761"
+  },
+  "observed_r6_gaps": [
+    "empty chain accepted",
+    "bool sequence accepted",
+    "missing initial prev_sha256 accepted",
+    "NaN payload accepted",
+    "duplicate JSON keys silently collapsed"
+  ],
+  "explicit_limits_tested": [
+    "whitespace and key order normalization",
+    "truncation passes without trusted checkpoint",
+    "full rehash passes without trusted checkpoint",
+    "both demonstrated changes fail with independent expected_head"
+  ],
+  "results": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "open_receipts/tests",
+        "-v"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "test_boolean_sequence_rejected (test_hardening.HardeningTests.test_boolean_sequence_rejected) ... ok\ntest_cli_empty_exit_one (test_hardening.HardeningTests.test_cli_empty_exit_one) ... ok\ntest_cli_invalid_utf8_exit_two (test_hardening.HardeningTests.test_cli_invalid_utf8_exit_two) ... ok\ntest_cli_malformed_exit_two (test_hardening.HardeningTests.test_cli_malformed_exit_two) ... ok\ntest_cli_missing_file_exit_two (test_hardening.HardeningTests.test_cli_missing_file_exit_two) ... ok\ntest_cli_valid_checkpoint_exit_zero (test_hardening.HardeningTests.test_cli_valid_checkpoint_exit_zero) ... ok\ntest_complete_rewrite_requires_independent_checkpoint (test_hardening.HardeningTests.test_complete_rewrite_requires_independent_checkpoint) ... ok\ntest_duplicate_nested_keys_rejected (test_hardening.HardeningTests.test_duplicate_nested_keys_rejected) ... ok\ntest_duplicate_top_level_keys_rejected (test_hardening.HardeningTests.test_duplicate_top_level_keys_rejected) ... ok\ntest_empty_chain_rejected (test_hardening.HardeningTests.test_empty_chain_rejected) ... ok\ntest_expected_count_mismatch_rejected (test_hardening.HardeningTests.test_expected_count_mismatch_rejected) ... ok\ntest_float_sequence_rejected (test_hardening.HardeningTests.test_float_sequence_rejected) ... ok\ntest_invalid_checkpoint_configuration_rejected (test_hardening.HardeningTests.test_invalid_checkpoint_configuration_rejected) ... ok\ntest_invalid_initial_link_rejected (test_hardening.HardeningTests.test_invalid_initial_link_rejected) ... ok\ntest_malformed_digest_rejected (test_hardening.HardeningTests.test_malformed_digest_rejected) ... ok\ntest_matching_checkpoint_valid (test_hardening.HardeningTests.test_matching_checkpoint_valid) ... ok\ntest_mismatching_checkpoint_rejected (test_hardening.HardeningTests.test_mismatching_checkpoint_rejected) ... ok\ntest_missing_required_fields_rejected (test_hardening.HardeningTests.test_missing_required_fields_rejected) ... ok\ntest_negative_sequence_rejected (test_hardening.HardeningTests.test_negative_sequence_rejected) ... ok\ntest_non_json_types_and_nonstring_keys_rejected (test_hardening.HardeningTests.test_non_json_types_and_nonstring_keys_rejected) ... ok\ntest_nonfinite_json_constants_and_overflow_rejected (test_hardening.HardeningTests.test_nonfinite_json_constants_and_overflow_rejected) ... ok\ntest_nonfinite_payload_rejected (test_hardening.HardeningTests.test_nonfinite_payload_rejected) ... ok\ntest_nonobject_jsonl_rejected (test_hardening.HardeningTests.test_nonobject_jsonl_rejected) ... ok\ntest_nonobject_receipt_rejected (test_hardening.HardeningTests.test_nonobject_receipt_rejected) ... ok\ntest_surrogate_payload_rejected_without_crash (test_hardening.HardeningTests.test_surrogate_payload_rejected_without_crash) ... ok\ntest_truncation_requires_independent_checkpoint (test_hardening.HardeningTests.test_truncation_requires_independent_checkpoint) ... ok\ntest_unicode_payload_valid (test_hardening.HardeningTests.test_unicode_payload_valid) ... ok\ntest_whitespace_and_key_order_are_not_byte_integrity (test_hardening.HardeningTests.test_whitespace_and_key_order_are_not_byte_integrity) ... ok\ntest_broken_link_is_detected (test_verifier.ReceiptVerifierTests.test_broken_link_is_detected) ... ok\ntest_jsonl_loader (test_verifier.ReceiptVerifierTests.test_jsonl_loader) ... ok\ntest_payload_tamper_is_detected (test_verifier.ReceiptVerifierTests.test_payload_tamper_is_detected) ... ok\ntest_sequence_gap_is_detected (test_verifier.ReceiptVerifierTests.test_sequence_gap_is_detected) ... ok\ntest_valid_chain (test_verifier.ReceiptVerifierTests.test_valid_chain) ... ok\n\n----------------------------------------------------------------------\nRan 33 tests in 0.007s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "open_receipts.verifier",
+        "open_receipts/example_receipts.jsonl"
+      ],
+      "returncode": 0,
+      "stdout": "VALID receipts=2\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "open_receipts.verifier",
+        "open_receipts/example_receipts.jsonl",
+        "--expected-head",
+        "664937d92f993db1025c2f9223b7bf5dc6ff653a4af36f359f3928471ae75912",
+        "--expected-count",
+        "2"
+      ],
+      "returncode": 0,
+      "stdout": "VALID receipts=2\n",
+      "stderr": ""
+    }
+  ]
+}

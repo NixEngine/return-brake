@@ -1,0 +1,1 @@
+"""Open receipt verification primitives."""

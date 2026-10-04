@@ -1,0 +1,68 @@
+{
+  "schema": "open_receipts.manifest/1",
+  "revision": "R9",
+  "base_commit": "b1c6cd7d3569dbfad7f6d6fe87928c259e680a34",
+  "scope": "Only open_receipts/. This manifest does not relicense or attest historical Return Brake files. Self excluded.",
+  "files": {
+    "open_receipts/.gitignore": {
+      "sha256": "6feaded4e28ea86e001a6751b4e3d960e8b7c31b9616ff9936b79297086e809b",
+      "bytes": 23
+    },
+    "open_receipts/LICENSE": {
+      "sha256": "3a981fd4cac3f475e34eab9435b56178168aa1b9c22cdbcc1288e838cf97416f",
+      "bytes": 669
+    },
+    "open_receipts/MANIFEST_R7.json": {
+      "sha256": "082acd6940e9a2c5b1c84dea92b48a374aaf57141f355d1f4f069a0032ec65ab",
+      "bytes": 2215
+    },
+    "open_receipts/README.md": {
+      "sha256": "755510ede15b637883e5f35267f095f942e025adc7cffbea50d1277c4467886b",
+      "bytes": 6271
+    },
+    "open_receipts/README_R9.md": {
+      "sha256": "c797567e91f68ee2d67a4b27a5a216ba3398ccf82ee30d0910c66f6770110ee5",
+      "bytes": 8068
+    },
+    "open_receipts/VALIDATION_R7.json": {
+      "sha256": "4aaf1c6647e0f5ae8ab2cca70243acdf5a7a384daab3db1872bbaf24c581619e",
+      "bytes": 6381
+    },
+    "open_receipts/VALIDATION_R9.json": {
+      "sha256": "560023647e3ac48ec6f57d15e09e9547216620696a6967eb656b7fd6609f49f1",
+      "bytes": 10078
+    },
+    "open_receipts/__init__.py": {
+      "sha256": "2f4f797e1667610f06d6290f60a1e049b9633d8ca79337acd8c3dd0acbdc1668",
+      "bytes": 44
+    },
+    "open_receipts/byte_bridge.py": {
+      "sha256": "09079511a51dc47160bc3bf7b751ee1ca2e2503cda3dd4154ea36d83bbf29b47",
+      "bytes": 9126
+    },
+    "open_receipts/demo_r9.py": {
+      "sha256": "983a04f4677eab43a4c1fceadf1a01f30a385be668c7645e90ce7b4e8974af25",
+      "bytes": 1117
+    },
+    "open_receipts/example_receipts.jsonl": {
+      "sha256": "52b59c0192f616a669ff30e38c8dfea2efc820817742db9099dc86bb7ed63761",
+      "bytes": 388
+    },
+    "open_receipts/tests/test_byte_bridge.py": {
+      "sha256": "a416bc0b106acc95e330bd8ceca988b4ce1be6f066fa5aa0bd311efe4f6ac624",
+      "bytes": 11067
+    },
+    "open_receipts/tests/test_hardening.py": {
+      "sha256": "0f76d42d0f953755ddea3309ad3a4844b7dd93e3892d1273adb621f9c3a496e4",
+      "bytes": 7054
+    },
+    "open_receipts/tests/test_verifier.py": {
+      "sha256": "22e2f6745b5ec67156723be627aed9aa744ab4cabc2fdb0fd3b62076c2002339",
+      "bytes": 1940
+    },
+    "open_receipts/verifier.py": {
+      "sha256": "040efd54aab5cd8ce13ef54b6e5be2fa694f355486078f8b5c76ce4cfa9f47c8",
+      "bytes": 7352
+    }
+  }
+}
